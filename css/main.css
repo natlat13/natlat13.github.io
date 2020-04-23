@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Manrope&display=swap');
+
+
+body {
+    max-width: 500px;
+}
+header {
+    max-width: 500px;
+    background-color: #EEA39E;
+    border-radius: 15px;
+    margin: auto;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    color:#FFF1EA;
+    padding:0.25em;
+}
+main {
+    max-width: 500px;
+}
+.name{
+   
+}
+.me {
+   float:right;
+}
+
+main {
+    font-family: 'Manrope', sans-serif;
+
+}
+
+footer {
+    max-width: 500px;
+    background-color: #EEA39E;
+    border-radius: 15px;
+    margin: auto;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    color:#FFF1EA;
+    padding:0.25em;
+}
+footer a {
+    color:#FFF1EA;
+}
