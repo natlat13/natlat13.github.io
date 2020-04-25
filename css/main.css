@@ -3,29 +3,27 @@
 
 body {
     max-width: 500px;
+    margin: 0 auto;
 }
+
 header {
     max-width: 500px;
     background-color: #EEA39E;
     border-radius: 15px;
-    margin: auto;
+    margin: 0 auto;
     font-family: 'Bangers', cursive;
     text-align: center;
-    color:#FFF1EA;
-    padding:0.25em;
+    color: #FFF1EA;
+    padding: 0.25em;
 }
-main {
-    max-width: 500px;
-}
-.name{
-   
-}
+
 .me {
-   float:right;
+    float: right;
 }
 
 main {
     font-family: 'Manrope', sans-serif;
+    
 
 }
 
@@ -36,9 +34,11 @@ footer {
     margin: auto;
     font-family: 'Bangers', cursive;
     text-align: center;
-    color:#FFF1EA;
-    padding:0.25em;
+    color: #FFF1EA;
+    padding: 0.25em;
 }
+
 footer a {
-    color:#FFF1EA;
+    color: #FFF1EA;
 }
+
