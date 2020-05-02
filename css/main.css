@@ -18,16 +18,17 @@ header {
 header, footer, main {
     max-width: 600px;
     margin: 0 auto;
+    font-size: 1.5em;
 }
 .me {
-    float: right;
     box-shadow: 0 0 30px #292F36;
     border-radius: 5px;
     border: 1px solid #292F36;
 }
 
 .year {
-    letter-spacing:0.05em;
+
+    letter-spacing: 0.5em;
 }
 main {
     font-family: 'Manrope', sans-serif;
