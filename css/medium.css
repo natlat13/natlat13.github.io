@@ -1,9 +1,22 @@
-@media only screen and (min-width: 32.5em)
-{
-.me {
-    float: right;
-}
-header,footer, main {
-    font-size: 2.5em;
-}
+@media only screen and (min-width: 32.5em) {
+    header {
+        border-radius: 15px;
+    }
+
+
+    main {
+        font-size: 1em;
+
+    }
+    header, footer {
+        font-size: 1.5em;
+    }
+
+    .me {
+        box-shadow: 0 0 30px #292F36;
+        border-radius: 5px;
+        border: 1px solid #292F36;
+        float: right;
+
+    }
 }

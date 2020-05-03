@@ -6,10 +6,7 @@ body {
 }
 
 header {
-    
     background-color: #EEA39E;
-    border-radius: 15px;
-    margin: 0 auto;
     font-family: 'Bangers', cursive;
     text-align: center;
     color: #292F36;
@@ -18,20 +15,17 @@ header {
 header, footer, main {
     max-width: 600px;
     margin: 0 auto;
-    font-size: 1.5em;
+    font-size: 0.75em;
+
 }
-.me {
-    box-shadow: 0 0 30px #292F36;
-    border-radius: 5px;
-    border: 1px solid #292F36;
-}
+
 
 .year {
-
     letter-spacing: 0.5em;
 }
 main {
     font-family: 'Manrope', sans-serif;
+    
     
 
 }
