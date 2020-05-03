@@ -7,14 +7,58 @@
     <title>Design Principles</title>
     <meta name="description" content="Identifies basic design principles used in already existing sites.">
     <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="/lesson2/css/main.css">
-    <link rel="stylesheet" href="/lesson2/css/medium.css">
-    <link rel="stylesheet" href="/lesson2/css/large.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../lesson2/css/main.css">
+    <link rel="stylesheet" href="../lesson2/css/medium.css">
+    <link rel="stylesheet" href="../lesson2/css/large.css">
+
 </head>
 
 <body>
-
+    <header>
+        <h1>Design Principles</h1>
+        <p>Natalya Peet</p>
+    </header>
+    <main>
+        <div class="white-space">
+            <h2>White Space</h2>
+            <a href="https://www.apple.com/" target="_blank">Apple</a>
+            <img class="white-space-img" src="images/apple.jpg" alt="Apple Site">
+            <p>Apple demonstrates a good use of white space on both their mobile and desktop site. White space doesn't
+                always have to be "white" - it is just a term used to utilize blank space on a page and shift your
+                attention to the main focus. This image has a mostly black/dark background, with only a small amount of
+                information - their latest phones name, an image, the cost, and two links to either get more information
+                or purchase it. It is very direct/to-the-point and leaves little to no room for distraction or
+                confusion. </p>
+        </div>
+        <div class="alignment">
+            <h2>Alignment</h2>
+            <a href="https://www.thenorthface.com/" target="_blank">The North Face</a>
+            <img class="alignment-img" src="images/northface.jpg" alt="North Face Site">
+            <p>The North Face follows a consistent center alignment on their mobile site, and a strong left alignment on
+                their desktop version. On the mobile version, there is an image/video in the center of the page that
+                fills the screen from left to right. While all of the text follows the same center alignment whether
+                it’s the small bit of discount information at the top of the image, or the larger text below the image
+                talking about a current project The North Face is working on. <br>
+                While the desktop version uses the same image/video, this version is left aligned. The North Face logo
+                itself is lined up with the text that is displayed as an image overlay. </p>
+        </div>
+        <div class="contrast">
+            <h2>Contrast</h2>
+            <a href="https://www.americafirst.com/" target="_blank">America First Credit Union</a>
+            <img class="contrast-img" src="images/bank.jpg" alt="America First Site">
+            <p>adsfdfgh</p>
+        </div>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Natalya Peet | Utah | <a href="https://www.byui.edu/online" target="_blank">BYUI
+            Online Learning</a>
+        <br>Last Updated: <span id="last"></span>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('last').textContent = document.lastModified;
+    </script>
 </body>
 
 </html>
