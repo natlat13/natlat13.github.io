@@ -4,5 +4,10 @@
     }
     main {
         font-size: 2em;
+        grid-gap:15px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
+.contrast {
+    grid-column: 3/4;
+}
 }

@@ -34,20 +34,19 @@ footer a {
     color: #292F36;
 }
 main {
-    display:grid;
-    grid-gap:15px;
-    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     padding:0.5em;
     font-size: 1em;
 
+} 
+main div {
+    margin-bottom: 1em;
 }
 .alignment a, .contrast a, .white-space a {
     color: #292F36;
     
 }
 .white-space {
-    column-span:1/2;
     align-items: center;
     border: 1px solid #EEA39E;
     border-radius: 15px;
@@ -62,7 +61,6 @@ main {
     max-width: 100%;
 }
 .alignment {
-    column-span: 2/3;
     align-items: center;
     border: 1px solid #EEA39E;
     border-radius: 15px;
