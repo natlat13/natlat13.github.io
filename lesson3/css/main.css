@@ -13,7 +13,7 @@ nav ul {
     color: #9DB5B2;
 }
 nav a {
-    color: #9DB5B2;
+    color: #3E505B;
 }
 nav a:hover {
     font-size:1.5em;
@@ -39,4 +39,40 @@ h1 {
 main {
     font-family: 'Playfair Display', serif;
 
+}
+
+
+.person-one {
+    text-indent: 3em;
+}
+
+.color-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    text-align: center;
+}
+.color-one {
+    background-color: #DFF2F4;
+    max-height: 3em;
+    padding: 0.5em;
+}
+.color-two {
+    background-color: #949BA0;
+    max-height: 3em;
+    padding: 0.5em;
+}
+.color-three {
+    background-color: #9DB5B2;
+    max-height: 3em;
+    padding: 0.5em;
+}
+.color-four {
+    background-color: #6F8285;
+    max-height: 3em;
+    padding: 0.5em;
+}
+.color-five {
+    background-color: #3E505B;
+    max-height: 3em;
+    padding: 0.5em;
 }
