@@ -1,3 +1,7 @@
+main {
+    margin: 0;
+}
+
 .logo {
     max-width: 15%;
 }
@@ -5,10 +9,11 @@ nav {
     color: #9DB5B2;
     background-color: #DFF2F4;
     padding: 0.15em;
+    text-align: center;
 }
 nav ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    grid-template-columns: 1fr;
     list-style: none;
     color: #9DB5B2;
 }
@@ -87,4 +92,11 @@ main {
 .site-name-type {
     font-family: 'Luckiest Guy', cursive;
 
+}
+
+@media only screen and (min-width: 32.5em){
+    nav ul {
+        grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    
+    }
 }
