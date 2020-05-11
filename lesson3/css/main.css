@@ -1,5 +1,6 @@
 main {
     margin: 0;
+    font-size: 0.5em;
 }
 
 .logo {
@@ -26,11 +27,9 @@ nav a:hover {
 
 header, footer {
     font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 0.75em;
+}
 
-}
-header {
- 
-}
 h2 {
     font-family: 'Open Sans Condensed', sans-serif;
 
@@ -97,6 +96,22 @@ main {
 @media only screen and (min-width: 32.5em){
     nav ul {
         grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
-    
     }
+    main {
+        font-size: 1em;
+    }
+    header, footer {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 64em){
+main {
+    font-size: 1.5em;;
+}
+header, footer {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5em;
+}
 }
