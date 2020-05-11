@@ -1,3 +1,5 @@
+
+
 body {
     padding:1em;
     margin: 0 auto;
@@ -28,6 +30,7 @@ header, footer {
     padding: 0.25em;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1em;
+    
 }
 
 footer a {
@@ -37,6 +40,8 @@ main {
     margin: 0 auto;
     padding:0.5em;
     font-size: 1em;
+    font-family: 'Playfair Display', serif;
+
 
 } 
 main div {
@@ -67,7 +72,7 @@ main div {
     padding: 1em;
     line-height: 125%;
 }
-.alignment a, .alignment img .alignment p {
+.alignment a, .alignment img, .alignment p {
     padding-top:0.5em;
 }
 .alignment img {

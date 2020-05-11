@@ -1,0 +1,42 @@
+.logo {
+    max-width: 15%;
+}
+nav {
+    color: #9DB5B2;
+    background-color: #DFF2F4;
+    padding: 0.15em;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    list-style: none;
+    color: #9DB5B2;
+}
+nav a {
+    color: #9DB5B2;
+}
+nav a:hover {
+    font-size:1.5em;
+  }
+
+header, footer {
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+header {
+ 
+}
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    color: #9DB5B2;
+
+}
+main {
+    font-family: 'Playfair Display', serif;
+
+}

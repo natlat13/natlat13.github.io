@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site Project Natalya</title>
+    <meta name="description"
+        content="Weather website where you can find current weather conditions and find out whether or not you need an umbrella.">
+    <link
+        href="https://fonts.googleapis.com/css?family=Dancing+Script|Luckiest+Guy|Open+Sans+Condensed:300|Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/umbrella300ppi.png" alt="Cloud with umbrella image">
+        <h1>Umbrella or not</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Site Plan</a></li>
+                <li><a href="target-audience.html">Target target-audience</a></li>
+                <li><a href="color-scheme.html">Color Scheme</a></li>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Target Audience</h2>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Natalya Peet | Utah | <a href="https://www.byui.edu/online" target="_blank">BYUI
+            Online Learning</a> | <a class="home" href="../index.html">Assignment Portal</a>
+        <br>Last Updated: <span id="last"></span>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('last').textContent = document.lastModified;
+    </script>
+</body>
+
+</html>
