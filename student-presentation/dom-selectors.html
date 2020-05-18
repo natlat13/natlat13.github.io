@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selectors</title>
+    <meta name="description" content="Test site for DOM selectors">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <a href="/presentation.css"></a>
+</head>
+
+<body>
+    <h1>DOM Selectors</h1>
+    <h2 class="test">Test heading with class "test".</h2>
+    <p class="test">Example paragraph with class "test".</p>
+    <p>Click button to change the font color to the first element with the class "test".</p>
+    <button onclick="turnPink()">Test color</button>
+
+    <h2 class="test">Click button to change background color of the first element with class "test".</h2>
+    <button onclick="turnBlue()">Test background</button>
+
+    <p id="id-test">Testing elements with an id instead of a class.</p>
+    <button onclick="turnGreen()">Test id</button>
+
+    <h2 class="test">querySelectAll option</h2>
+    <button onclick="selectAll()">Select All</button>
+
+    <h2>.textContent option</h2>
+    <p class="test">This option gives you the text content of the button element.</p>
+    <button onclick="textTest()" id="text">Text Content Button</button>
+    <p id="example"></p>
+
+
+    <h2>Text content from an unordered list:</h2>
+    <h3>List:</h3>
+    <ul id="list">
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Oranges</li>
+        <li>Plums</li>
+    </ul>
+    <button onclick="getList()">Get List</button>
+    <p id="list-ex"></p>
+
+    <h2 class="test">Changing HTML content completely with .innerHTML</h2>
+    <p id="change" onclick="changeContent()">Click me to change my HTML content.</p>
+
+    <script>
+        function turnPink() {
+            document.querySelector(".test").style.color = "pink";
+        }
+
+        function turnBlue() {
+            document.querySelector(".test").style.backgroundColor = "blue";
+        }
+
+        function turnGreen() {
+            document.querySelector("#id-test").style.color = "green";
+        }
+
+        function selectAll() {
+            var x, i;
+            x = document.querySelectorAll(".test");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.backgroundColor = "red";
+            }
+        }
+
+        function textTest() {
+            var t = document.getElementById("text").textContent;
+            document.getElementById("example").innerHTML = t;
+        }
+
+
+        function getList() {
+            var l = document.getElementById("list").textContent;
+            document.getElementById("list-ex").innerHTML = l;
+        }
+
+        function changeContent() {
+            document.getElementById("change").innerHTML = "Content changed!";
+        }
+    </script>
+</body>
+
+</html>
