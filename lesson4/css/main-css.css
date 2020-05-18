@@ -41,18 +41,19 @@ main {
 
 
 nav a:hover {
-    color: black;
+    background-color: white;
 }
 
 header,
 footer {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 0.75em;
-    background-color: #DFF2F4;
     padding:0.25em;
 
 }
-
+footer {
+    background-color: #DFF2F4;
+}
 h1, h2 {
     font-family: 'Open Sans Condensed', sans-serif;
     color: #9DB5B2;
