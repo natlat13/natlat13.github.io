@@ -47,6 +47,8 @@ footer {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 0.75em;
     padding:0.25em;
+    max-width: 1060px;
+
 
 }
 footer {
