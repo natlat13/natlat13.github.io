@@ -1,30 +1,29 @@
 main {
     margin: 0;
     font-size: 0.5em;
+    color:#1B1B1E;
 }
 
 .logo {
-    max-width: 15%;
+    max-width: 12%;
 }
 
 .navigation {
     list-style: none;
     margin: 0 auto;
     max-width: 1060px;
-    color: #9DB5B2;
-    background-color: #DFF2F4;
+    background-color: #6A0136;
     padding: 0.15em;
     text-align: center;
 }
-.navigation a {
+.navigation li a {
     display: block;
-    color: #1B1B1E;
+    color: white;
     text-decoration: none;
     font-weight: 700;
 }
 .navigation a:hover {
-    background-color: white;
-
+opacity:0.75;
 }
 .navigation li {
     display: none;
@@ -45,14 +44,22 @@ main {
 header,
 footer {
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 0.75em;
+    font-size: 0.5em;
     padding:0.25em;
     max-width: 1060px;
+    color:white;
 
 
 }
 footer {
-    background-color: #DFF2F4;
+    background-color: #6A0136;
+}
+footer a{
+    color:white;
+    text-decoration: none;
+}
+footer a:hover{
+    opacity:0.75;
 }
 h1, h2 {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -68,21 +75,27 @@ main {
 }
 
 .content-box {
-    background-color: #949BA0;
+    background-color: #1B1B1E;
+    color:white; 
     max-height: 3em;
     max-width: 760px;
     padding: 0.25em;
     margin: 0.5em;
-    border-style: dashed;
+    border-style: double;
     border-color: white;
 }
 
 .top-bar {
     display:flex;
     align-items: center;
+    margin-bottom: 1em;
 }
 .title p{
     margin: 0;
+    color:#1B1B1E;
+}
+.title {
+    padding-left: 0.5em;
 }
 @media only screen and (min-width: 32.5em) {
     .navigation {
@@ -100,7 +113,7 @@ main {
     }
 
     .navigation li a {
-        color: black;
+        color: white;
     }
 
     main {
@@ -111,6 +124,7 @@ main {
     footer {
         font-size: 1em;
     }
+    
 }
 
 
@@ -125,5 +139,8 @@ main {
     header,
     footer {
         font-size: 1.5em;
+    }
+    .logo {
+        max-width: 15%;
     }
 }
