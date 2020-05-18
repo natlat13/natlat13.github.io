@@ -39,12 +39,6 @@ main {
     display: block;
 }
 
-nav li {
-    display: block;
-    grid-template-columns: 1fr;
-    list-style: none;
-    color: #9DB5B2;
-}
 
 nav a:hover {
     color: black;
@@ -54,18 +48,18 @@ header,
 footer {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 0.75em;
+    background-color: #DFF2F4;
+    padding:0.25em;
+
 }
 
-h2 {
+h1, h2 {
     font-family: 'Open Sans Condensed', sans-serif;
-
-}
-
-h1 {
-    font-family: 'Luckiest Guy', cursive;
     color: #9DB5B2;
-
+    margin:0;
 }
+
+
 
 main {
     font-family: 'Playfair Display', serif;
@@ -83,7 +77,12 @@ main {
     border-color: white;
 }
 
-
+.top-bar {
+    display:flex;
+}
+.top-bar h1, .top-bar div {
+    flex-direction: row-reverse;
+}
 @media only screen and (min-width: 32.5em) {
     .navigation {
         display: flex;
