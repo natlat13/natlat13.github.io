@@ -1,11 +1,12 @@
 main {
     margin: 0;
-    font-size: 0.5em;
     color:#1B1B1E;
+    font-family: 'Playfair Display', serif;
+
 }
 
 .logo {
-    max-width: 12%;
+    width: 20%;
 }
 
 .navigation {
@@ -44,7 +45,6 @@ opacity:0.75;
 header,
 footer {
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 0.5em;
     padding:0.25em;
     max-width: 1060px;
     color:white;
@@ -68,17 +68,10 @@ h1, h2 {
 }
 
 
-
-main {
-    font-family: 'Playfair Display', serif;
-
-}
-
 .content-box {
     background-color: #1B1B1E;
     color:white; 
-    max-height: 3em;
-    max-width: 760px;
+    max-width: 760px;   
     padding: 0.25em;
     margin: 0.5em;
     border-style: double;
@@ -97,6 +90,9 @@ main {
 .title {
     padding-left: 0.5em;
 }
+
+/*medium view*/
+
 @media only screen and (min-width: 32.5em) {
     .navigation {
         display: flex;
@@ -117,12 +113,12 @@ main {
     }
 
     main {
-        font-size: 1em;
+        font-size: 14px;
     }
 
     header,
     footer {
-        font-size: 1em;
+        font-size: 18px;
     }
     
 }
@@ -132,15 +128,12 @@ main {
 
 @media only screen and (min-width: 64em) {
     main {
-        font-size: 1.5em;
-        ;
+        font-size: 16px;
+        
     }
 
     header,
     footer {
-        font-size: 1.5em;
-    }
-    .logo {
-        max-width: 15%;
+        font-size: 20px;
     }
 }
