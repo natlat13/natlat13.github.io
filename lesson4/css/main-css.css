@@ -19,9 +19,12 @@ main {
 .navigation a {
     display: block;
     color: #1B1B1E;
+    text-decoration: none;
+    font-weight: 700;
 }
 .navigation a:hover {
-    color: black;
+    background-color: white;
+
 }
 .navigation li {
     display: none;
@@ -37,11 +40,6 @@ main {
 
 .responsive li {
     display: block;
-}
-
-
-nav a:hover {
-    background-color: white;
 }
 
 header,
@@ -80,8 +78,8 @@ main {
 .top-bar {
     display:flex;
 }
-.motto {
-align-items: center;
+.title {
+    align-content: center;
 }
 @media only screen and (min-width: 32.5em) {
     .navigation {
