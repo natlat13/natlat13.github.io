@@ -242,7 +242,7 @@ h2 {
     .weather-summary {
         position: absolute;
         top: 40px;
-        left: 200px;
+        left: 150px;
     }
 
 }
@@ -258,4 +258,10 @@ h2 {
     footer {
         font-size: 20px;
     }
+    .weather-summary {
+        position: absolute;
+        top: 40px;
+        left: 200px;
+    }
+
 }
