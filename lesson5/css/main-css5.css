@@ -159,7 +159,6 @@ h2 {
 
 .forecast {
     display: none;
-
 }
 
 .article {
@@ -223,21 +222,30 @@ h2 {
         background-color: #8F3968;
         color: white;
         padding: 0.5em;
+        display: block;
+        /* justify-content: space-between; */
+        text-align: center;
+    }
+    .forecast-images {
         display: flex;
         justify-content: space-between;
-        text-align: center;
+        margin: 10px;
     }
 
     .forecast img {
-        max-width: 10%;
+        max-width: 5%;
     }
 
     .forecast h2 {
         color: white;
-    }
-
-    .forecast-head {
         text-align: center;
+    }
+    .forecast-img {
+        flex-wrap: inherit;
+    }
+    
+    .temps {
+        display:inline-flexbox;
     }
 
     .article img {
