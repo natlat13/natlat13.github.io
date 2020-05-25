@@ -28,6 +28,9 @@ main {
 .navigation a:hover {
     opacity: 0.75;
 }
+.navigation a:active {
+    text-decoration: underline;
+}
 
 .navigation li {
     display: none;
