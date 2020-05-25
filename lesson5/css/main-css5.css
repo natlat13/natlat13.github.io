@@ -182,7 +182,9 @@ h2 {
     padding: 0.5rem;
     text-align: center;
 }
-
+.prestonmap {
+    display: none;
+}
 /*medium view*/
 
 @media only screen and (min-width: 32.5em) {
@@ -247,6 +249,14 @@ h2 {
         top: 40px;
         left: 150px;
     }
+.prestonmap {
+    display: block;
+    float: left;
+    margin: 10px;
+}
+.contact img {
+    max-width: 15%
+}
 
 }
 
