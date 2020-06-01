@@ -245,7 +245,7 @@ h2 {
     }
     
     .temps {
-        display:inline-flexbox;
+        display:inline-flex;
     }
 
     .article img {
