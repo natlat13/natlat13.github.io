@@ -43,3 +43,12 @@ function windChill(tempF, speed) {
     }
 }
 document.getElementById("windchill").innerHTML = chill;
+
+//Font loader
+WebFont.load({
+    google: {
+      families: [
+         'Playfair Display, Open Sans Condensed'
+      ]
+    }
+  });
