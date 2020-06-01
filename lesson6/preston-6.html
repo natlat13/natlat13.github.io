@@ -43,7 +43,7 @@
         <div class="hero-div">
             <picture>
                 <source srcset="images/medium400.png" media="(min-width: 500px) and (max-width: 799px)">
-                    <source srcset="images/large600.png" media="(min-width: 800px)">
+                <source srcset="images/large600.png" media="(min-width: 800px)">
 
                 <img src="images/small250.png" alt="Hero Image"></picture>
 
@@ -59,12 +59,12 @@
         <div class="forecast">
             <h2>5 Day Forecast</h2>
             <div class="forecast-images">
-            <img class="forecast-img" src="images/light-rain.png" alt="forecast image"> 
-            <img class="forecast-img" src="images/sky.png" alt="forecast image"> 
-            <img class="forecast-img" src="images/sun.png" alt="forecast image"> 
-            <img class="forecast-img" src="images/wind.png" alt="forecast image">
-            <img class="forecast-img" src="images/snow.png" alt="forecast image"></div>
-    
+                <img class="forecast-img" src="images/light-rain.png" alt="forecast image">
+                <img class="forecast-img" src="images/sky.png" alt="forecast image">
+                <img class="forecast-img" src="images/sun.png" alt="forecast image">
+                <img class="forecast-img" src="images/wind.png" alt="forecast image">
+                <img class="forecast-img" src="images/snow.png" alt="forecast image"></div>
+
         </div>
         <div class="article">
             <img src="images/abstract-bright-colorful-cover-268941.jpg" alt="Rainbow Umbrellas">
@@ -112,6 +112,15 @@
     </footer>
     <script src="js/js6.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        //Font loader
+        var WebFont = require('webfontloader');
+        WebFont.load({
+            google: {
+                families: ['Playfair Display, Open Sans Condensed']
+            }
+        });
+    </script>
 
 </body>
 
