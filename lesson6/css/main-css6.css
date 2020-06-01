@@ -36,7 +36,6 @@ main h2{
 
 .navigation li {
     display: none;
-
 }
 
 .navigation li:first-child {
@@ -244,9 +243,7 @@ h2 {
         flex-wrap: inherit;
     }
     
-    .temps {
-        display:inline-flex;
-    }
+   
 
     .article img {
         float: right;
