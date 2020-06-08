@@ -1,16 +1,4 @@
-/* First try... 
-let imagesToLoad = document.querySelectorAll('img[data-src]');
-const loadImages = (image) => {
-  image.setAttribute('src', image.getAttribute('data-src'));
-  image.onload = () => {
-    image.removeAttribute('data-src');
-  };
-};
-
-imagesToLoad.forEach((img) => {
-    loadImages(img);
-  }); 
-*/
+const images = document.querySelectorAll('[data-src]');
 
 function preloadImage(img) {
   const src = img.getAttribute("data-src");
@@ -22,7 +10,7 @@ function preloadImage(img) {
 
   const imgOptions = {
 threshold: 0,
-rootMargin: "0px 0px 300px 0 px"
+rootMargin: "0px 0px -200px 0px"
   };
 
   const imgObserver = new IntersectionObserver((entries, imgObserver) => {
@@ -36,12 +24,13 @@ rootMargin: "0px 0px 300px 0 px"
     });
   }, imgOptions);
 
-  images.forEach(imgage => {
+  images.forEach(image => {
     imgObserver.observe(image);
   });
 
 
- /* Nav Bar */ 
+
+ /* Nav Bar */
   function toggleMenu () {
     document.getElementsByClassName("navigation")[0]
     .classList.toggle("responsive");
@@ -61,4 +50,4 @@ var m = new Date();
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
     "November", "December"
 ];
-document.getElementById("month").innerHTML = months[m.getMonth()];
+document.getElementById("month").innerHTML = months[m.getMonth()]; 
