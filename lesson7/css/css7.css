@@ -1,0 +1,170 @@
+body {
+  max-width: 1360px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+  color: #1B1B1E;
+  font-family: 'Playfair Display', serif;
+}
+
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+picture img :hover {
+  box-shadow: rgba(0, 0, 0, 0.15);
+
+}
+
+/* From previous 
+------
+*/
+
+main {
+  margin: 0;
+  color: #1B1B1E;
+  font-family: 'Playfair Display', serif;
+  align-items: center;
+  max-width: 1060px;
+}
+
+main h2 {
+  text-align: center;
+}
+
+body {
+  font-size: 16px;
+}
+
+.logo {
+  width: 20%;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 1060px;
+  background-color: #6A0136;
+  padding: 0.15em;
+  text-align: center;
+}
+
+.navigation li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navigation a:hover {
+  opacity: 0.75;
+}
+
+.navigation a:active {
+  text-decoration: underline;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.responsive li {
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+header,
+footer {
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 0.25em;
+  max-width: 1060px;
+  color: white;
+}
+
+footer {
+  background-color: #6A0136;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  opacity: 0.75;
+}
+
+h1,
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #6A0136;
+  margin: 0;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.title p {
+  margin: 0;
+  color: #1B1B1E;
+}
+
+.title {
+  padding-left: 0.5em;
+}
+
+/*medium view*/
+
+@media only screen and (min-width: 32.5em) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .navigation li a {
+    color: white;
+  }
+
+  main {
+    font-size: 14px;
+  }
+
+  header,
+  footer {
+    font-size: 18px;
+  }
+}
+
+
+  /*large view*/
+
+  @media only screen and (min-width: 64em) {
+    main {
+      font-size: 16px;
+    }
+
+    header,
+    footer {
+      font-size: 20px;
+    }
+  }
