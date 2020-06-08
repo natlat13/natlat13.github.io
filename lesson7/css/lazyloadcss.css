@@ -1,0 +1,26 @@
+body {
+  max-width: 1360px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+  color: #1B1B1E;
+  font-family: 'Playfair Display', serif;
+}
+
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+/*
+[data-src]{
+  min-width: 50px;
+  min-height: 50px;
+}*/
+
+
+
+

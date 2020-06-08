@@ -8,7 +8,24 @@ const loadImages = (image) => {
 
 imagesToLoad.forEach((img) => {
     loadImages(img);
+  }); 
+
+  /*const imgOptions = {};
+  const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        preloadImage(entry.target);
+        imgObserver.unobserve(entry.target);
+      }
+    });
+  }, imgOptions);
+
+  images.forEach(imgage => {
+    imgObserver.observe(image);
   });
+*/
 
   
   function toggleMenu () {
