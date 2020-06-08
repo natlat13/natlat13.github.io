@@ -7,18 +7,25 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-picture img[data-src] {
-  filter: blur(0.2em);
+picture {
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
-
-picture img {
+.pics img {
+  border-radius: 0.25rem white;
+  box-shadow: rgba(0, 0, 0, 0.15);
   filter: blur(0em);
   transition: filter 0.5s;
 }
-
-picture img :hover {
-  box-shadow: rgba(0, 0, 0, 0.15);
-
+.pics {
+  background-color: #1B1B1E;
+  color: white;
+  padding: 1rem;
+}
+.pics p {
+margin-top:0;
+margin-bottom: 1.5rem;
 }
 
 /* From previous 
@@ -125,6 +132,8 @@ h2 {
   padding-left: 0.5em;
 }
 
+
+
 /*medium view*/
 
 @media only screen and (min-width: 32.5em) {
@@ -153,6 +162,12 @@ h2 {
   footer {
     font-size: 18px;
   }
+  picture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+  }
+  
 }
 
 
@@ -166,5 +181,9 @@ h2 {
     header,
     footer {
       font-size: 20px;
+    }
+    picture {
+      grid-template-columns: 1fr 1fr 1fr;
+
     }
   }
