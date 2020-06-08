@@ -14,7 +14,6 @@ picture {
 }
 .pics img {
   border-radius: 0.25rem white;
-  box-shadow: rgba(0, 0, 0, 0.15);
   filter: blur(0em);
   transition: filter 0.5s;
 }
@@ -165,8 +164,12 @@ h2 {
   picture {
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
   }
+  .pics img:hover {
+    box-shadow: rgba(0, 0, 0, 0.15);
+  }
+  
+
   
 }
 
