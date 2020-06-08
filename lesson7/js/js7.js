@@ -1,3 +1,4 @@
+/* First try... 
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 const loadImages = (image) => {
   image.setAttribute('src', image.getAttribute('data-src'));
@@ -9,8 +10,21 @@ const loadImages = (image) => {
 imagesToLoad.forEach((img) => {
     loadImages(img);
   }); 
+*/
 
-  /*const imgOptions = {};
+function preloadImage(img) {
+  const src = img.getAttribute("data-src");
+    if(!src) {
+      return;
+    }
+    img.src = src;
+}
+
+  const imgOptions = {
+threshold: 0,
+rootMargin: "0px 0px 300px 0 px"
+  };
+
   const imgObserver = new IntersectionObserver((entries, imgObserver) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
@@ -25,13 +39,14 @@ imagesToLoad.forEach((img) => {
   images.forEach(imgage => {
     imgObserver.observe(image);
   });
-*/
 
-  
+
+ /* Nav Bar */ 
   function toggleMenu () {
     document.getElementsByClassName("navigation")[0]
     .classList.toggle("responsive");
 }
+
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
