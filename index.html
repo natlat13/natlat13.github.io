@@ -38,10 +38,14 @@
             Online Learning</a>
         <br>Last Updated: <span id="last"></span>
     </footer>
-  
-    <script>
-          
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
+    <script>
+          WebFont.load({
+            google: {
+                families: ['Playfair Display, Open Sans Condensed']
+            }
+        });
         document.getElementById('year').textContent = new Date().getFullYear();
         document.getElementById('last').textContent = document.lastModified;
     </script>
