@@ -21,11 +21,13 @@ th {
 th {
     color: white;
     background-color: #628ca6;
+    font-size: 1.25em;
 }
 
 thead [colspan] {
     color: black;
     background-color: #7fb9c2;
+    font-size: 1.75em;
 }
 
 td {
