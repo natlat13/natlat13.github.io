@@ -1,5 +1,6 @@
 html {
-    font-family: sans-serif;
+    font-family: Ubuntu, sans-serif;
+    font-size: 20px;
   }
   
   table {
@@ -7,6 +8,8 @@ html {
     border: 2px solid rgb(200,200,200);
     letter-spacing: 1px;
     font-size: 0.8rem;
+    align-items: center;
+    box-shadow: 5px 5px 5px #888888;
   }
   
   td, th {
@@ -14,22 +17,37 @@ html {
     padding: 10px 20px;
   }
   
-  th {
-    background-color: rgb(235,235,235);
-  }
-  
   td {
     text-align: center;
   }
   
   tr:nth-child(even) td {
-    background-color: rgb(250,250,250);
+    background-color: #e7ffed;
   }
   
   tr:nth-child(odd) td {
-    background-color: rgb(245,245,245);
+    background-color: #e7f0ed;
   }
-  
-  caption {
-    padding: 10px;
+  tr:nth-child(1) td {
+    background-color: #7fb9c2;
+  }
+
+  .table-title {
+     
+      color: black;
+      background-color: #7fb9c2;
+  }
+  .table-headings {
+      color: white;
+      background-color: #628ca6;
+  }
+  .row-one, .row-three {
+  }
+  .row-two {
+  }
+  .foot {
+      background-color: #7fb9c2;
+  }
+  td .row-five:nth-child() {
+      column-span: 2;;
   }

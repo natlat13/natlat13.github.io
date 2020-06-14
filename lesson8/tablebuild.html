@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Table template</title>
-    <link href="minimal-table.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <h1>Table template</h1>
+    <meta name="description" content="Example of a table.">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th class="table-title" colspan="3">ACME Wildwest</th>
+        </tr>
+        <tr>
+            <th class="table-headings">Period</th>
+            <th class="table-headings">Sales</th>
+            <th class="table-headings">Sales Goal</th>
+        </tr>
+        <tr>
+            <td class="row-one">August</td>
+            <td class="row-one">$3,590</td>
+            <td class="row-one">$4,000</td>
+        </tr>
+        <tr>
+            <td class="row-two">September</td>
+            <td class="row-two">$4,420</td>
+            <td class="row-two">$5,000</td>
+        </tr>
+        <tr>
+            <td class="row-three">October</td>
+            <td class="row-three">$4,870</td>
+            <td class="row-three">$5,000</td>
+        </tr>
+        <tr>
+            <td class="row-four">November</td>
+            <td class="row-four">$8,610</td>
+            <td class="row-four">$7,500</td>
+        </tr>
+        <tr>
+            <td class="row-five"><em>Black Friday</em></td>
+            <td class="row-five" colspan="2">$3,200</td>
+        </tr>
+        <tr>
+            <td class="row-six">December</td>
+            <td class="row-six">$6,820</td>
+            <td class="row-six">$7,500</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td class="foot" colspan="3">Compiled 12.20.2020 by bRauls</td>
+            </tr>
+        </tfoot>
 
 
-  </body>
+    </table>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Ubuntu']
+            }
+        });
+    </script>
+</body>
+
 </html>
