@@ -1,53 +1,50 @@
 html {
     font-family: Ubuntu, sans-serif;
     font-size: 20px;
-  }
-  
-  table {
+}
+
+table {
     border-collapse: collapse;
-    border: 2px solid rgb(200,200,200);
+    border: 2px solid rgb(200, 200, 200);
     letter-spacing: 1px;
     font-size: 0.8rem;
     align-items: center;
     box-shadow: 5px 5px 5px #888888;
-  }
-  
-  td, th {
-    border: 1px solid rgb(190,190,190);
-    padding: 10px 20px;
-  }
-  
-  td {
-    text-align: center;
-  }
-  
-  tr:nth-child(even) td {
-    background-color: #e7ffed;
-  }
-  
-  tr:nth-child(odd) td {
-    background-color: #e7f0ed;
-  }
-  tr:nth-child(1) td {
-    background-color: #7fb9c2;
-  }
+}
 
-  .table-title {
-     
-      color: black;
-      background-color: #7fb9c2;
-  }
-  .table-headings {
-      color: white;
-      background-color: #628ca6;
-  }
-  .row-one, .row-three {
-  }
-  .row-two {
-  }
-  .foot {
-      background-color: #7fb9c2;
-  }
-  td .row-five:nth-child() {
-      column-span: 2;;
-  }
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+th {
+    color: white;
+    background-color: #628ca6;
+}
+
+thead [colspan] {
+    color: black;
+    background-color: #7fb9c2;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: #e7f0ed;
+}
+
+tfoot tr:nth-child(1) td {
+    background-color: #7fb9c2;
+}
+
+tbody tr #goal-met {
+    color: white;
+    background-color: #628ca6;
+}
