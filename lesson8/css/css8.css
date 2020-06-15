@@ -7,28 +7,9 @@ body {
     font-family: 'Playfair Display', serif;
   }
   
-  picture {
-    padding: 0.5rem;
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-  }
-  .pics img {
-    border-radius: 0.25rem white;
-    filter: blur(0em);
-    transition: filter 0.5s;
-  }
-  .pics {
-    background-color: #1B1B1E;
-    color: white;
-    padding: 1rem;
-  }
-  .pics p {
-  margin-top:0;
-  margin-bottom: 1.5rem;
-  }
-  .pics img[data-src] {
-    filter: blur(0.2em);
-  }
+  #ratingvalue {
+	margin: 0 15px;
+}
   /* From previous 
   ------
   */

@@ -1,3 +1,7 @@
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
+////////////////////////////////////////////////////////////////
 const images = document.querySelectorAll('[data-src]');
 
 function preloadImage(img) {
@@ -29,7 +33,7 @@ rootMargin: "0px 0px -200px 0px"
     imgObserver.observe(image);
   });
 
-
+///////////////////////////////////////////////////////////////
 
  /* Nav Bar */
   function toggleMenu () {
