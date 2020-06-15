@@ -1,6 +1,58 @@
+/* FORM STLYING */
+form fieldset {
+    margin: 2rem 10px;
+    border: 1px solid #6A0136;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+}
+
+form legend {
+    color: #1B1B1E;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.personal, form label.storm-info {
+    display: block;
+    padding-top: 1rem;
+    color: #1B1B1E;
+}
+
+form label.personal input {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 1rem;
+    color: #1B1B1E;
+    width: 90%;
+    max-width: 20rem;
+    
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form input.submit-button {
+    border: none;
+    background-color: #6A0136;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form .text-area {
+    min-width: 300px;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+/*------------------------------*/
+
 body {
     max-width: 1360px;
-    text-align: center;
+    
     font-size: 16px;
     margin: 0;
     color: #1B1B1E;
