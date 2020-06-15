@@ -55,8 +55,6 @@ form .text-area {
 /*------------------------------*/
 
 body {
-    max-width: 1360px;
-    
     font-size: 16px;
     margin: 0;
     color: #1B1B1E;
@@ -75,7 +73,7 @@ body {
     color: #1B1B1E;
     font-family: 'Playfair Display', serif;
     align-items: center;
-    max-width: 1060px;
+    max-width: 1360px;
   }
   
   main h2 {
@@ -92,10 +90,8 @@ body {
   
   .navigation {
     list-style: none;
-    margin: 0 auto;
-    max-width: 1060px;
     background-color: #6A0136;
-    padding: 0.15em;
+    padding: 0.2em;
     text-align: center;
   }
   
@@ -130,9 +126,9 @@ body {
   header,
   footer {
     font-family: 'Open Sans Condensed', sans-serif;
-    padding: 0.25em;
-    max-width: 1060px;
+    padding: 0.35em;
     color: white;
+
   }
   
   footer {
@@ -210,7 +206,7 @@ body {
       border-radius: 150px 150px 150px 150px;
   
     }
-    
+
   
     
   }
@@ -227,8 +223,5 @@ body {
       footer {
         font-size: 20px;
       }
-      picture {
-        grid-template-columns: 1fr 1fr 1fr;
-  
-      }
+     
     }
