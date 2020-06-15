@@ -40,16 +40,16 @@
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Storm Report Center</legend>
-                <label class='personal'>Full Name * <input type='text' name='fname' pattern='[a-zA-Z ]{5,}'
+                <label class='personal'>Full Name<span id='required'>* </span><input type='text' name='fname' pattern='[a-zA-Z ]{5,}'
                         required></label>
-                <label class='personal'>Email * <input type='email' name='email'
+                <label class='personal'>Email<input type='email' name='email'
                         placeholder='emailaddress@email.com'></label>
-                <label class='personal'>Phone <input type='tel' name='phone' required></label>
-                <label class='personal'>Zip Code <input type='number' name='zip' required></label>
+                <label class='personal'>Phone<span id='required'>*</span><input type='tel' name='phone' required></label>
+                <label class='personal'>Zip Code<span id='required'>*</span><input type='number' name='zip' required></label>
             </fieldset>
             <fieldset>
                 <legend>Storm Information</legend>
-                <label><input type='date' name='storm-date'></label>
+                <label class='storm-info'><input type='date' name='storm-date'></label>
 
                 <label class='storm-info' for='storm-type'>Storm Type<input name='storm-type' list='storm-list'></label>
                 <datalist id="storm-list">
@@ -93,10 +93,9 @@
                 <label class='storm-info'><input type='radio' name='in-danger' value='maybe'>Maybe</label>
                 <label class='storm-info'><input type='radio' name='in-danger' value='no'>No</label>
                 <br>
-                <label class='storm-info'>Additional Information</label><br>
-
+                <label class='storm-info'>Additional Information<br>
                 <textarea class='text-area'
-                    placeholder="Please leave any additional information or comments here."></textarea>
+                    placeholder="Please leave any additional information or comments here."></textarea></label>
             </fieldset>
 
 

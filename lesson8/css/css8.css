@@ -18,7 +18,7 @@ form label.personal, form label.storm-info {
     color: #1B1B1E;
 }
 
-form label.personal input {
+form label.personal input, form label.storm-info input, .text-area {
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
@@ -28,7 +28,7 @@ form label.personal input {
     width: 90%;
     max-width: 20rem;
     
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.09);
 }
 
 form input.submit-button {
@@ -40,12 +40,16 @@ form input.submit-button {
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 20rem;
+    font-size: 1.25rem;;
 }
 
 form .text-area {
     min-width: 300px;
     max-width: 100%;
     margin-top: 10px;
+}
+#required {
+    color:red;
 }
 
 /*------------------------------*/
