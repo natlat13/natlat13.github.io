@@ -4,6 +4,7 @@ form fieldset {
     border: 1px solid #6A0136;
     border-radius: 10px;
     padding: 0.5rem 2%;
+    font-size: 1.25rem;
 }
 
 form legend {
@@ -16,6 +17,7 @@ form label.personal, form label.storm-info {
     display: block;
     padding-top: 1rem;
     color: #1B1B1E;
+    font-size: 1.25rem;
 }
 
 form label.personal input, form label.storm-info input, .text-area {
@@ -79,7 +81,10 @@ body {
   main h2 {
     text-align: center;
   }
-  
+  h1 {
+      padding: 0.75rem;
+    
+  }
   body {
     font-size: 16px;
   }
