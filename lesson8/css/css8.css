@@ -48,7 +48,7 @@ form .text-area {
     max-width: 100%;
     margin-top: 10px;
 }
-#required {
+.required {
     color:red;
 }
 
