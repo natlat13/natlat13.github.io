@@ -1,0 +1,100 @@
+
+body {
+    font-size: 16px;
+    margin: 0;
+    color: #1B1B1E;
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* From previous 
+  ------
+  */
+  
+  main {
+    color: #1B1B1E;
+    font-family: 'Playfair Display', serif;
+  }
+  .cards {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;    
+  }
+  .cards img {
+      margin-top: 0px;
+      margin-bottom: 30px;
+      max-width: 200px;
+      box-shadow: 0 0 30px;
+  }
+
+  h1 {
+      padding: 0.75rem;
+    
+  }
+  body {
+    font-size: 16px;
+  }
+  
+  
+  header,
+  footer {
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 0.35em;
+    color: white;
+    background-color: #6A0136;
+
+
+  }
+
+  
+  
+  
+  h1,
+  h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+  }
+  
+
+  
+  
+  /*medium view*/
+  
+  @media only screen and (min-width: 32.5em) {
+   
+    main {
+      font-size: 14px;
+    }
+    .cards {
+    grid-template-columns: 1fr 1fr;
+
+    }
+  
+    header,
+    footer {
+      font-size: 18px;
+    }
+    .cards img {
+        max-width: 350px;
+    }
+
+    
+  }
+  
+  
+    /*large view*/
+  
+    @media only screen and (min-width: 64em) {
+      main {
+        font-size: 16px;
+      }
+  .cards {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 0.5rem;
+  }
+      header,
+      footer {
+        font-size: 20px;
+      }
+     
+    }

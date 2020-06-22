@@ -1,0 +1,176 @@
+
+/*------------------------------*/
+
+body {
+    font-size: 16px;
+    margin: 0;
+    color: #1B1B1E;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  #ratingvalue {
+	margin: 0 15px;
+}
+  /* From previous 
+  ------
+  */
+  
+  main {
+    margin: 0;
+    color: #1B1B1E;
+    font-family: 'Playfair Display', serif;
+    align-items: center;
+    max-width: 1360px;
+  }
+  
+  main h2 {
+  }
+  h1 {
+      padding: 0.75rem;
+    
+  }
+  body {
+    font-size: 16px;
+  }
+  
+  .logo {
+    width: 20%;
+  }
+  
+  .navigation {
+    list-style: none;
+    background-color: #6A0136;
+    padding: 0.2em;
+    text-align: center;
+  }
+  
+  .navigation li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .navigation a:hover {
+    opacity: 0.75;
+  }
+  
+  .navigation a:active {
+    text-decoration: underline;
+  }
+  
+  .navigation li {
+    display: none;
+  }
+  
+  .navigation li:first-child {
+    display: block;
+  }
+  
+  .responsive li {
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  
+  header,
+  footer {
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 0.35em;
+    color: white;
+
+  }
+  
+  footer {
+    background-color: #6A0136;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    opacity: 0.75;
+  }
+  
+  h1,
+  h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #6A0136;
+    margin: 0;
+  }
+  
+  .top-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  
+  .title p {
+    margin: 0;
+    color: #1B1B1E;
+  }
+  
+  .title {
+    padding-left: 0.5em;
+  }
+  
+  
+  
+  /*medium view*/
+  
+  @media only screen and (min-width: 32.5em) {
+    .navigation {
+      display: flex;
+    }
+  
+    .navigation li:first-child {
+      display: none;
+    }
+  
+    .navigation li {
+      display: block;
+      flex: 1 1 100%;
+    }
+  
+    .navigation li a {
+      color: white;
+    }
+  
+    main {
+      font-size: 14px;
+    }
+  
+    header,
+    footer {
+      font-size: 18px;
+    }
+    picture {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .pics img:hover {
+      box-shadow: 0 0 50px;
+      border-radius: 150px 150px 150px 150px;
+  
+    }
+
+  
+    
+  }
+  
+  
+    /*large view*/
+  
+    @media only screen and (min-width: 64em) {
+      main {
+        font-size: 16px;
+      }
+  
+      header,
+      footer {
+        font-size: 20px;
+      }
+     
+    }
