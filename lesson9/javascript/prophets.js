@@ -16,7 +16,7 @@ fetch(requestURL)
             h2.textContent = jsonObject.prophets[i].name + ' ' + jsonObject.prophets[i].lastname;
             p.textContent = "Birthdate: " + jsonObject.prophets[i].birthdate;
             p2.textContent = "Birthplace: " + jsonObject.prophets[i].birthplace;
-            img.setAttribute('src', jsonObject.prophets[i].imageurl);
+            img.setAttribute('src', jsonObject.prophets[i].imageurl, 'alt', jsonObject.prophets[i].name + ' ' + jsonObject.prophets[i].lastname + ', ' + jsonObject.prophets[i].order);
 
 
             card.appendChild(h2);
