@@ -1,9 +1,49 @@
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        console.table(jsonObject);
+        const townsArray = jsonObject['towns']
+        var towns = townsArray.filter(town => (town.name == 'Preston'));
+        towns = towns[0];
+        
+        let townCard = document.createElement('section');
+        let townName = document.createElement('h2');
+        let year = document.createElement('p');
+        let pop = document.createElement('p');
+        let rain = document.createElement('p');
+        let img = document.createElement('img');
+
+
+        townName.innerHTML = towns.name;
+        year.innerHTML = towns.yearFounded;
+        pop.innerHTML = towns.currentPopulation;
+        rain.innerHTML = towns.averageRainfall;
+        img.setAttribute('src', "images/" + towns.photo);
+        img.setAttribute('alt', "pic of " + towns.name);
+
+        
+
+
+        townCard.appendChild(townName);
+        townCard.appendChild(year);
+        townCard.appendChild(pop);
+        townCard.appendChild(rain);
+        townCard.appendChild(img);
+
+
+        document.querySelector('div.townCard').appendChild(townCard);
+
+        
+    });
 
 /* Nav Bar */
 function toggleMenu() {
-    document.getElementsByClassName("navigation")[0]
-        .classList.toggle("responsive");
+    document.getElementsByClassName('navigation')[0]
+        .classList.toggle('responsive');
 }
 
 

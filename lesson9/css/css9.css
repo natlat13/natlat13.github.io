@@ -1,4 +1,3 @@
-
 /*------------------------------*/
 
 body {
@@ -6,155 +5,192 @@ body {
     margin: 0;
     color: #1B1B1E;
     font-family: 'Playfair Display', serif;
-  }
- 
-  
-  main {
+}
+
+
+main {
     margin: 0;
     color: #1B1B1E;
     font-family: 'Playfair Display', serif;
     align-items: center;
     max-width: 1360px;
-  }
-  
-  header h1, header p {
-      padding: 0.75rem;
-      font-family: 'Open Sans Condensed', sans-serif;
-    }
+}
 
-  body {
-    font-size: 16px;
-  }
-  
-  .logo {
+header h1,
+header p {
+    padding: 0.75rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+.logo {
     width: 20%;
-  }
-  
-  .navigation {
+}
+
+.navigation {
     list-style: none;
     background-color: #6A0136;
     padding: 0.2em;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-  }
-  
-  .navigation li a {
+}
+
+.navigation li a {
     display: block;
     color: white;
     text-decoration: none;
     font-weight: 700;
-  }
-  
-  .navigation a:hover {
+}
+
+.navigation a:hover {
     opacity: 0.75;
-  }
-  
-  .navigation a:active {
+}
+
+.navigation a:active {
     text-decoration: underline;
-  }
-  
-  .navigation li {
+}
+
+.navigation li {
     display: none;
-  }
-  
-  .navigation li:first-child {
+}
+
+.navigation li:first-child {
     display: block;
-  }
-  
-  .responsive li {
+}
+
+.responsive li {
     display: block;
     border-top: 1px solid rgba(0, 0, 0, 0.15);
-  }
-  
-  header,
-  footer {
+}
+
+header,
+footer {
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 0.35em;
     color: white;
+    font-size: 18px;
 
-  }
-  footer {
+}
+
+footer {
     background-color: #6A0136;
-  }
-  
-  footer a {
+}
+
+footer a {
     color: white;
     text-decoration: none;
-  }
-  
-  footer a:hover {
+}
+
+footer a:hover {
     opacity: 0.75;
-  }
-  
-  h1,
-  h2 {
+}
+
+h1,
+h2 {
     font-family: 'Open Sans Condensed', sans-serif;
     color: #6A0136;
     margin: 0;
-  }
-  
-  .top-bar {
+}
+
+.top-bar {
     display: flex;
     align-items: center;
     margin-bottom: 1em;
-  }
-  
-  .title p {
+}
+
+.title p {
     margin: 0;
     color: #1B1B1E;
-  }
-  
-  .title {
-    padding-left: 0.5em;
-  }
-  
-  
-  
-  /*medium view*/
-  
-  @media only screen and (min-width: 32.5em) {
-    .navigation {
-      display: flex;
-    }
-  
-    .navigation li:first-child {
-      display: none;
-    }
-  
-    .navigation li {
-      display: block;
-      flex: 1 1 100%;
-    }
-  
-    .navigation li a {
-      color: white;
-    }
-  
-    main {
-      font-size: 14px;
-    }
-  
-    header,
-    footer {
-      font-size: 18px;
-    }
-    
+}
 
+.title {
+    padding-left: 0.5em;
+}
+
+article {
+    padding: 1rem;
+    background-color: #1B1B1E;
+    border-radius: 25px;
+    color: white;
+    margin: 10px;
+}
+
+article h2 {
+    color: white;
+    padding-bottom: 0.75rem;
+}
+
+article a {
+    color: white;
+    text-decoration: none;
+}
+
+article a:hover {
+    opacity: 0.75;
+}
+
+article img {
+    max-width: 300px;
+    padding: 0.5rem;
+    box-shadow: 0 0 10px;
+}
+
+.weatherArticle {
+    text-align: center;
+}
+
+.weatherArticle p {
+    text-align: left;
+}
+
+/*medium view*/
+
+@media only screen and (min-width: 32.5em) {
   
-    
-  }
-  
-  
-    /*large view*/
-  
-    @media only screen and (min-width: 64em) {
-      main {
-        font-size: 16px;
-      }
-  
-      header,
-      footer {
-        font-size: 20px;
-      }
-     
+    .navigation {
+        display: flex;
     }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        color: white;
+    }
+
+
+    header,
+    footer, body {
+        font-size: 1rem;
+    }
+
+    article img {
+        max-width: 500px;
+    }
+
+    .weatherArticle {
+        text-align: left;
+    }
+
+}
+
+
+/*large view*/
+
+@media only screen and (min-width: 64em) {
+   
+    header,
+    footer, body {
+        font-size: 1.5rem;
+    }
+
+    article img {
+        max-width: 600px;
+    }
+}
