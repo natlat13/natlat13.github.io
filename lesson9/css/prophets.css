@@ -13,6 +13,7 @@ body {
   main {
     color: #1B1B1E;
     font-family: 'Playfair Display', serif;
+    max-width: 1360px;
   }
   .cards {
     margin: 10px;
@@ -31,9 +32,7 @@ body {
       padding: 0.75rem;
     
   }
-  body {
-    font-size: 16px;
-  }
+ 
   
   
   header,
@@ -75,7 +74,7 @@ body {
       font-size: 18px;
     }
     .cards img {
-        max-width: 350px;
+        max-width: 250px;
     }
 
     

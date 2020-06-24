@@ -6,17 +6,18 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         console.table(jsonObject);
-        for (let i = 0; i < jsonObject.prophets.length; i++) {
+        const prophets = jsonObject['prophets'];
+        for (let i = 0; i < prophets.length; i++) {
             let card = document.createElement("section");
             let h2 = document.createElement("h2");
             let p = document.createElement('p');
             let p2 = document.createElement('p');
             let img = document.createElement('img');
 
-            h2.textContent = jsonObject.prophets[i].name + ' ' + jsonObject.prophets[i].lastname;
-            p.textContent = "Birthdate: " + jsonObject.prophets[i].birthdate;
-            p2.textContent = "Birthplace: " + jsonObject.prophets[i].birthplace;
-            img.setAttribute('src', jsonObject.prophets[i].imageurl, 'alt', jsonObject.prophets[i].name + ' ' + jsonObject.prophets[i].lastname + ', ' + jsonObject.prophets[i].order);
+            h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+            p.textContent = "Birthdate: " + prophets[i].birthdate;
+            p2.textContent = "Birthplace: " + prophets[i].birthplace;
+            img.setAttribute('src', prophets[i].imageurl);
 
 
             card.appendChild(h2);

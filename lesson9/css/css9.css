@@ -7,13 +7,7 @@ body {
     color: #1B1B1E;
     font-family: 'Playfair Display', serif;
   }
-  
-  #ratingvalue {
-	margin: 0 15px;
-}
-  /* From previous 
-  ------
-  */
+ 
   
   main {
     margin: 0;
@@ -23,12 +17,11 @@ body {
     max-width: 1360px;
   }
   
-  main h2 {
-  }
-  h1 {
+  header h1, header p {
       padding: 0.75rem;
-    
-  }
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+
   body {
     font-size: 16px;
   }
@@ -42,6 +35,7 @@ body {
     background-color: #6A0136;
     padding: 0.2em;
     text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
   }
   
   .navigation li a {
@@ -79,7 +73,6 @@ body {
     color: white;
 
   }
-  
   footer {
     background-color: #6A0136;
   }
@@ -145,16 +138,7 @@ body {
     footer {
       font-size: 18px;
     }
-    picture {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
     
-    .pics img:hover {
-      box-shadow: 0 0 50px;
-      border-radius: 150px 150px 150px 150px;
-  
-    }
 
   
     
