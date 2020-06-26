@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <meta name="description" content="Umbrella or Not Home Page">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/css9.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <img class="logo" src="images/umbrella300.png" alt="Cloud with umbrella image">
+            <div class="title">
+                <h1>Umbrella or Not</h1>
+                <p class="motto">Do you need an umbrella today?</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/lesson5/preston-5.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+        <h1>OpenWeatherMap.org API Test</h1>
+<p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
+<hr>
+<p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
+
+<script src="javascript/weatherapi.js"></script>
+
+    
+    <footer>
+        <!--notes-->
+        &copy; Umbrella or Not | Natalya Peet
+        | <a class="assignment-portal" href="../index.html">Assignment Portal</a>
+        <br><span id="day"></span> <span id="date"></span> <span id="month"></span> <span id="year"></span>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        //Font loader 
+        WebFont.load({
+            google: {
+                families: ['Playfair Display, Open Sans Condensed']
+            }
+        });
+    </script>
+
+</body>
+
+</html>

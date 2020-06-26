@@ -7,37 +7,41 @@ fetch(requestURL)
     .then(function (jsonObject) {
         console.table(jsonObject);
         const townsArray = jsonObject['towns']
-        var towns = townsArray.filter(town => (town.name == 'Preston'));
-        towns = towns[0];
-        
-        let townCard = document.createElement('section');
-        let townName = document.createElement('h2');
-        let year = document.createElement('p');
-        let pop = document.createElement('p');
-        let rain = document.createElement('p');
-        let img = document.createElement('img');
+        for (let i = 0; i < townsArray.length; i++) {
+
+            var towns = townsArray.filter(town => (town.name == 'Preston' || town.name == 'Soda Springs' || town.name == 'Fish Haven'));
+            
+           towns = towns[i];
 
 
-        townName.innerHTML = towns.name;
-        year.innerHTML = towns.yearFounded;
-        pop.innerHTML = towns.currentPopulation;
-        rain.innerHTML = towns.averageRainfall;
-        img.setAttribute('src', "images/" + towns.photo);
-        img.setAttribute('alt', "pic of " + towns.name);
-
-        
-
-
-        townCard.appendChild(townName);
-        townCard.appendChild(year);
-        townCard.appendChild(pop);
-        townCard.appendChild(rain);
-        townCard.appendChild(img);
+            let townCard = document.createElement('section');
+            let div = document.createElement('div');
+            let townName = document.createElement('h2');
+            let year = document.createElement('p');
+            let pop = document.createElement('p');
+            let rain = document.createElement('p');
+            let img = document.createElement('img');
 
 
-        document.querySelector('div.townCard').appendChild(townCard);
+            townName.innerHTML = towns.name;
+            year.innerHTML = `Year Founded: ${towns.yearFounded}`;
+            pop.innerHTML = `Population: ${towns.currentPopulation}`;
+            rain.innerHTML = `Annual Rain Fall ${towns.averageRainfall}`;
+            img.setAttribute('src', "images/" + towns.photo);
+            img.setAttribute('alt', "pic of " + towns.name);
 
-        
+
+            townCard.appendChild(div);
+            div.appendChild(townName);
+            div.appendChild(year);
+            div.appendChild(pop);
+            div.appendChild(rain);
+            townCard.appendChild(img);
+
+
+            document.querySelector('div.townCard').appendChild(townCard);
+        }
+
     });
 
 /* Nav Bar */

@@ -11,7 +11,6 @@ body {
 main {
     margin: 0;
     color: #1B1B1E;
-    font-family: 'Playfair Display', serif;
     align-items: center;
     max-width: 1360px;
 }
@@ -25,6 +24,11 @@ header p {
 
 .logo {
     width: 20%;
+    margin-left: 10px;
+}
+
+nav {
+    margin: 0;
 }
 
 .navigation {
@@ -66,7 +70,7 @@ header p {
 header,
 footer {
     font-family: 'Open Sans Condensed', sans-serif;
-    padding: 0.35em;
+    padding: 0.35em 0;
     color: white;
     font-size: 18px;
 
@@ -133,7 +137,12 @@ article img {
     max-width: 300px;
     padding: 0.5rem;
     box-shadow: 0 0 10px;
+    float: left;
+    margin: 5px;
+    margin-right: 20px;
+
 }
+
 
 .weatherArticle {
     text-align: center;
@@ -143,10 +152,35 @@ article img {
     text-align: left;
 }
 
+.townCard {
+    background-color: #1B1B1E;
+    border-radius: 25px;
+    color: white;
+    margin: 10px;
+
+}
+
+.townCard h2,
+.townCard p {
+    color: white;
+    margin: 10px 20px;
+}
+
+.townCard img {
+    box-shadow: 0 0 10px;
+    max-width: 200px;
+}
+
+section {
+    padding: 1rem;
+}
+
+
+
 /*medium view*/
 
 @media only screen and (min-width: 32.5em) {
-  
+
     .navigation {
         display: flex;
     }
@@ -166,7 +200,8 @@ article img {
 
 
     header,
-    footer, body {
+    footer,
+    body {
         font-size: 1rem;
     }
 
@@ -178,19 +213,45 @@ article img {
         text-align: left;
     }
 
+    .townCard img {
+        max-width: 400px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
 }
 
 
 /*large view*/
 
 @media only screen and (min-width: 64em) {
-   
+
     header,
-    footer, body {
+    footer,
+    body {
         font-size: 1.5rem;
     }
 
     article img {
         max-width: 600px;
+    }
+
+    .townCard img {
+        max-width: 600px;
+    }
+
+    
+    section:nth-child(odd) {
+        flex-direction: row;
+    }
+    section div, section.townCard {
+        justify-content: center;
     }
 }
