@@ -173,7 +173,7 @@ section {
     color: white;
 }
 .map {
-    dispaly: none;
+    display: none;
 }
 /*medium view*/
 
@@ -216,10 +216,22 @@ section {
     }
    .map {
        display: block;
-       max-width: 300px;
+       margin-left: 1rem;
+       border-radius: 25px;
    }
    .contact {
        display: flex;
+       align-items: center;
+       background-color: #1B1B1E;
+       border-radius: 25px;
+       color: white;
+   }
+   .contact-no-map {
+       margin: 0 auto;
+       
+   }
+   .contact-no-map p {
+       align-items: center;
    }
 }
 

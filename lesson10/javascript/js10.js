@@ -1,21 +1,31 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperialAPPID=f10fe0a4423c6d05fbdfb9677e974545";
-
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=f10fe0a4423c6d05fbdfb9677e974545";
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsonObject) => {
+        document.getElementById('currently').textContent = jsonObject.weather[0].description;
+        document.getElementById('temp').textContent = jsonObject.main.temp;
+        document.getElementById('humidity').textContent = jsonObject.main.humidity;
+        document.getElementById('wind-speed').textContent = jsonObject.wind.speed;
+        document.getElementById('windchill').innerHTML = windChill(jsonObject.main.temp, jsonObject.wind.speed);
 
-        document.getElementById('weather-summary').textContent - jsonObject.list[0].weather[0].description;
+    });
 
-        const forecast = jsonObject.list.filter(x => x.dt_txt.include("18:00:00"));
+const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=f10fe0a4423c6d05fbdfb9677e974545";
+
+fetch(apiURL2)
+    .then((response) => response.json())
+    .then((jsonObject) => {
+
+        const fiveDayForecast = jsonObject.list.filter(x => x.dt_txt.includes("15:00:00"));
         const daysOfWeek = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
-        console.log(forecast);
+        console.log(fiveDayForecast);
         let i = 0;
-        forecast.forEach(fiveDayforecast => {
-            let d = new Date(fiveDayforecast.dt_txt);
-            document.getElementById(`temp.${i + 1}`).innerHTML = `${fiveDayforecast.main.temp.tofixed(0)}&deg;F`;
-            document.getElementById(`day${i + 1}`).textContent = daysOfWeek[d.getday()];
-            const imgsrc = `http://openweathermap.org/img/wn/${fiveDayforecast.weather[0].icon}@2x.png`;
-            const desc = fiveDayforecast.weather[0].description;
+        fiveDayForecast.forEach(forecast => {
+            let d = new Date(forecast.dt_txt);
+            document.getElementById(`temp${i + 1}`).innerHTML = `${forecast.main.temp.toFixed(0)}&deg;F`;
+            document.getElementById(`day${i + 1}`).textContent = daysOfWeek[d.getDay()];
+            const imgsrc = `http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`;
+            const desc = forecast.weather[0].description;
             document.getElementById(`icon${i + 1}`).setAttribute('src', imgsrc);
             document.getElementById(`icon${i + 1}`).setAttribute('alt', desc);
             i++;
@@ -23,9 +33,6 @@ fetch(apiURL)
         });
     })
 
-var tempF = parseFloat(document.getElementById("high").innerHTML);
-var speed = parseFloat(document.getElementById("wind-speed").innerHTML);
-var chill = windChill(tempF, speed);
 
 function windChill(tempF, speed) {
     if (tempF <= 50 && speed > 3) {
@@ -36,7 +43,7 @@ function windChill(tempF, speed) {
         return "N/A";
     }
 }
-document.getElementById("windchill").innerHTML = chill;
+
 
 //footer date
 document.getElementById('year').textContent = new Date().getFullYear();
