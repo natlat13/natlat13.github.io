@@ -71,7 +71,6 @@ nav {
 header,
 footer {
     font-family: 'Open Sans Condensed', sans-serif;
-    padding: 0.35em 0;
     color: white;
     font-size: 18px;
 
@@ -79,6 +78,10 @@ footer {
 
 footer {
     background-color: #6A0136;
+}
+
+footer p {
+    margin: 10px;
 }
 
 footer a {
@@ -148,9 +151,21 @@ picture img {
     margin: 5px;
 }
 
+.forecast ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .forecast ul li {
     list-style: none;
 }
+
+.forecast {
+    border: solid #1B1B1E;
+    border-radius: 25px;
+}
+
 
 section {
     padding: 1rem;
@@ -172,9 +187,32 @@ section {
 .weather-summary h2 {
     color: white;
 }
+
 .map {
     display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+.contact {
+    display: flex;
+    align-items: center;
+    background-color: #1B1B1E;
+    border-radius: 25px;
+    color: white;
+}
+.contact-no-map {
+    margin: 0 auto;
+}
+
+.contact-no-map p {
+    align-items: center;
+}
+.contact-no-map p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 /*medium view*/
 
 @media only screen and (min-width: 32.5em) {
@@ -214,25 +252,15 @@ section {
         float: right;
         padding: 0.5rem;
     }
-   .map {
-       display: block;
-       margin-left: 1rem;
-       border-radius: 25px;
-   }
-   .contact {
-       display: flex;
-       align-items: center;
-       background-color: #1B1B1E;
-       border-radius: 25px;
-       color: white;
-   }
-   .contact-no-map {
-       margin: 0 auto;
-       
-   }
-   .contact-no-map p {
-       align-items: center;
-   }
+
+    .map {
+        display: block;
+        margin-left: 1rem;
+        border-radius: 25px;
+    }
+
+    
+
 }
 
 
