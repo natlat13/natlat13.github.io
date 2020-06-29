@@ -211,6 +211,9 @@ section {
     margin-top: 0;
     margin-bottom: 0;
 }
+.contact img {
+    margin: 10px;
+}
 
 
 /*medium view*/
