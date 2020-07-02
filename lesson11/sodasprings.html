@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Page</title>
+    <meta name="description" content="Dedicated to weather reports for Preston, Idaho.">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/sodasprings.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <img class="logo" src="images/umbrella300.png" alt="Cloud with umbrella image">
+            <div class="title">
+                <h1>Umbrella or Not</h1>
+                <p class="motto">Do you need an umbrella today?</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/lesson11/preston.html">Preston</a></li>
+                <li><a href="/lesson11/sodasprings.html">Soda Springs</a></li>
+                <li><a href="/lesson11/fishhaven.html">Fish Haven</a></li>
+                <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson11/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Preston Idaho</h2>
+
+        <div class="hero-div">
+            <picture>
+                <source srcset="images/hero-med.png" media="(min-width: 500px) and (max-width: 799px)">
+                <source srcset="images/hero-large.png" media="(min-width: 800px)">
+
+                <img src="images/hero-small.png" alt="Hero Image - Idaho"></picture>
+
+            <section class="weather-summary">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span id="currently"></span></p>
+                <p>Temp: <span id="temp"></span></p>
+                <p>Windchill: <span id="windchill"> </span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="wind-speed"></span></p>
+            </section>
+        </div>
+        <div class="forecast">
+            <h2>5 Day Forecast</h2>
+            <ul class="five-day">
+                <li>
+                    <p><span id="day1"></span></p>
+                    <img src="" alt="" id="icon1">
+                    <p><span id="temp1"></span></p>
+                </li>
+                <li>
+                    <p><span id="day2"></span></p>
+                    <img src="" alt="" id="icon2">
+                    <p><span id="temp2"></span></p>
+                </li>
+                <li>
+                    <p><span id="day3"></span></p>
+                    <img src="" alt="" id="icon3">
+                    <p><span id="temp3"></span></p>
+                </li>
+                <li>
+                    <p><span id="day4"></span></p>
+                    <img src="" alt="" id="icon4">
+                    <p><span id="temp4"></span></p>
+                </li>
+                <li>
+                    <p><span id="day5"></span></p>
+                    <img src="" alt="" id="icon5">
+                    <p><span id="temp5"></span></p>
+                </li>
+            </ul>
+
+        </div>
+        <div class="article">
+            <img src="images/abstract-bright-colorful-cover-268941.jpg" alt="Rainbow Umbrellas">
+            <h2>Article Title</h2>
+            <p>Author</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet, tellus non sagittis consequat,
+                libero sem maximus ex, sit amet lobortis ante massa viverra urna. Suspendisse sodales, ipsum et semper
+                mollis, justo sem laoreet nibh, ac euismod augue quam quis augue. Praesent ultrices leo commodo,
+                tristique eros sit amet, porta ex. In eu purus nibh. Mauris est neque, varius ut pellentesque eu,
+                porttitor non nibh. Pellentesque id tempor metus. Aliquam aliquam est neque, a sollicitudin felis
+                bibendum laoreet.
+
+                Nam quis diam purus. Duis rhoncus, dui sit amet sollicitudin laoreet, libero neque faucibus ex, sit amet
+                malesuada ante ante nec justo. Curabitur facilisis erat in risus euismod tincidunt a at nisi. Cras
+                aliquet, purus vitae pharetra congue, purus ex aliquam nunc, vel interdum justo ante vel lorem. Maecenas
+                augue arcu, imperdiet a fringilla vel, scelerisque sed augue. Pellentesque et iaculis mauris, sit amet
+                blandit est. Curabitur id nulla id enim commodo feugiat nec in mauris. Donec aliquam scelerisque nisl at
+                elementum. Aenean pulvinar sodales diam at dapibus. Etiam ultricies volutpat orci a fermentum. Aenean ut
+                turpis leo. Vivamus ultrices diam a rhoncus luctus. Mauris in erat vitae nibh hendrerit viverra sit amet
+                eleifend dolor. Suspendisse imperdiet felis purus, porttitor dapibus ante pulvinar vel. Quisque semper
+                dui non ligula tristique viverra. Nam ultricies sapien ipsum, finibus lacinia odio rhoncus sed.
+            </p>
+        </div>
+        <div class="contact">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10462.110987108212!2d-111.88289100546419!3d42.09430510424798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1593322548460!5m2!1sen!2sus"
+                width="300" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            <div class="contact-no-map">
+                <h4>Umbrella or Not</h4>
+                <p>30 N 1st E</p>
+                <p>Preston, ID 83263</p>
+                <br>
+                <p>999.999.9999</p>
+                <p>umbrellaornot@uon.com</p>
+                <br>
+
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img class="social-media-icons" src="images/facebook48px.png" alt="Facebook" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="social-media-icons"
+                        src="images/instagram48px.png" alt="Instagram" /></a>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p> &copy; Umbrella or Not | Natalya Peet
+            | <a class="assignment-portal" href="../index.html">Assignment Portal</a>
+            <br><span id="day"></span> <span id="date"></span> <span id="month"></span> <span id="year"></span></p>
+    </footer>
+    <script src="javascript/sodasprings.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        /* WebFont.load({
+            google: {
+                families: ['Playfair Display', 'Open Sans Condensed']
+            }
+        });*/
+    </script>
+
+</body>
+
+</html>

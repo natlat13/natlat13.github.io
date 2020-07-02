@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <meta name="description" content="Photo gallery with 9 images.">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <img class="logo" src="images/umbrella300.png" alt="Cloud with umbrella image">
+            <div class="title">
+                <h1>Umbrella or Not</h1>
+                <p class="motto">Do you need an umbrella today?</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/lesson11/preston.html">Preston</a></li>
+                <li><a href="/lesson11/sodasprings.html">Soda Springs</a></li>
+                <li><a href="/lesson11/fishhaven.html">Fish Haven</a></li>
+                <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson11/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture>
+            <div class="pics"><img src="images/300x200placeholder.png" data-src="images/cloudy.jpg" alt="Clouds">
+                <p>Cloudy with a chance of meatballs.</p>
+            </div>
+            <div class="pics"><img src="images/300x200placeholder.png" data-src="images/tornado.jpg" alt="Tornado">
+                <p>We represent the lollipop guild.</p>
+            </div>
+            <div class="pics"><img src="images/300x200placeholder.png" data-src="images/lightning.jpg" alt="Ligtning">
+                <p>It's electric, boogie woogie woogie woogie.</p>
+            </div>
+            <div class="pics"><img src="images/300x200placeholder.png" data-src="images/lightrain.jpg" alt="Rain">
+                <p>It's raining men!</p>
+            </div>
+            <div class="pics"><img src="images/300x200placeholder.png" data-src="images/clearskies.jpg" alt="Clear sky">
+                <p>Don't worry, be happy.</p>
+            </div>
+            <div class="pics"><img src="images/300x200placeholder.png" data-src="images/morelightning.jpg" alt="Lightning">
+                <p>Shine bright like a diamond.</p>
+            </div>
+            <div class="pics"><img  src="images/300x200placeholder.png" data-src="images/rain.jpg" alt="Rain">
+                <p>You can stand under my umbrella.</p>
+            </div>
+            <div class="pics"><img src="images/300x200placeholder.png" data-src="images/snowflake.jpg" alt="Snowflake">
+                <p>Snowflake, don't forget us.</p>
+            </div>
+            <div class="pics"><img src="images/300x200placeholder.png" data-src="images/sunny.jpg" alt="Sunny">
+                <p>When the sun shines, we shine together.</p>
+            </div>
+        </picture>
+
+
+
+
+
+    </main>
+    <footer>
+        <!--notes-->
+        &copy; Umbrella or Not | Natalya Peet
+        | <a class="assignment-portal" href="../index.html">Assignment Portal</a>
+        <br><span id="day"></span> <span id="date"></span> <span id="month"></span> <span id="year"></span>
+    </footer>
+    <script src="javascript/gallery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        //Font loader - was getting an error with this one but the webfont config seemed to work..
+        WebFont.load({
+            google: {
+                families: ['Playfair Display, Open Sans Condensed']
+            }
+        });
+    </script>
+
+</body>
+
+</html>

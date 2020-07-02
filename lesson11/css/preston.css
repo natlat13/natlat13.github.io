@@ -9,10 +9,11 @@ body {
 
 
 main {
-    margin: 0;
+    margin: 10px;
     color: #1B1B1E;
     align-items: center;
     max-width: 1360px;
+    text-align: center;
 }
 
 header h1,
@@ -78,6 +79,7 @@ footer {
 footer {
     background-color: #6A0136;
 }
+
 footer p {
     margin: 10px;
 }
@@ -113,68 +115,105 @@ h2 {
     padding-left: 0.5em;
 }
 
-article {
+picture img {
+    box-shadow: 0 0 10px;
+
+}
+
+.article {
     padding: 1rem;
     background-color: #1B1B1E;
     border-radius: 25px;
     color: white;
     margin: 10px;
+    text-align: left;
 }
 
-article h2 {
+.article h2 {
     color: white;
-    padding-bottom: 0.75rem;
+    margin-bottom: 0;
 }
 
-article a {
+.article a {
     color: white;
     text-decoration: none;
 }
 
-article a:hover {
-    opacity: 0.75;
+
+.article p:nth-child(2) {
+    padding: 0.25rem;
 }
 
-article img {
+.article img {
     max-width: 300px;
     padding: 0.5rem;
     box-shadow: 0 0 10px;
     margin: 5px;
-
 }
 
-
-.weatherArticle {
-    text-align: center;
+.forecast ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.weatherArticle p {
-    text-align: left;
+.forecast ul li {
+    list-style: none;
 }
 
-.townCard {
-    background-color: #1B1B1E;
+.forecast {
+    border: solid #1B1B1E;
     border-radius: 25px;
-    color: white;
-    margin: 10px;
-
 }
 
-.townCard h2,
-.townCard p {
-    color: white;
-    margin: 10px 20px;
-}
-
-.townCard img {
-    box-shadow: 0 0 10px;
-    max-width: 200px;
-}
 
 section {
     padding: 1rem;
 }
 
+.weather-summary {
+    color: white;
+    background: radial-gradient(#1B1B1E, #8F3968);
+    border: 1px solid #6A0136;
+    padding: 1rem;
+    box-shadow: 0 0 30px #6A0136;
+    opacity: 0.8;
+}
+
+.weather-summary p {
+    margin: 4px;
+}
+
+.weather-summary h2 {
+    color: white;
+}
+
+.map {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    background-color: #1B1B1E;
+    border-radius: 25px;
+    color: white;
+}
+.contact-no-map {
+    margin: 0 auto;
+}
+
+.contact-no-map p {
+    align-items: center;
+}
+.contact-no-map p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.contact img {
+    margin: 10px;
+}
 
 
 /*medium view*/
@@ -205,32 +244,26 @@ section {
         font-size: 1rem;
     }
 
-    article img {
+    .weather-summary {
+        position: absolute;
+        top: 300px;
+        left: 50px;
+    }
+
+    .article img {
         max-width: 500px;
-        float: left;
-        margin-right: 20px;
+        float: right;
+        padding: 0.5rem;
     }
 
-    .weatherArticle {
-        text-align: left;
+    .map {
+        display: block;
+        margin-left: 1rem;
+        border-radius: 25px;
     }
 
-    .townCard img {
-        max-width: 400px;
-    }
+    
 
-    .townCard section {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 1rem;
-        align-items: center;
-        justify-items: center;
-    }
-
-    .townCard section:nth-child(odd) {
-        flex-direction: row-reverse;
-    }
 }
 
 
@@ -244,19 +277,14 @@ section {
         font-size: 1.5rem;
     }
 
-    article img {
-        max-width: 600px;
+    .weather-summary {
+        position: absolute;
+        top: 500px;
+        left: 75px;
     }
 
-    .townCard img {
-        max-width: 400px;
+    .article img {
+        max-width: 700px;
     }
-    
-    
 
-    .townCard div, townCard section {
-        justify-content: center;
-    }
-    
-    
 }
