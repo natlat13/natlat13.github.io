@@ -89,6 +89,8 @@ body {
 
 .logo {
   width: 20%;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 nav {
   margin: 0;

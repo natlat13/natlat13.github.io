@@ -9,7 +9,7 @@ body {
 
 
 main {
-    margin: 10px;
+    margin: 0 auto;
     color: #1B1B1E;
     align-items: center;
     max-width: 1360px;
@@ -18,15 +18,15 @@ main {
 
 header h1,
 header p {
-    padding: 0.75rem;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
 
 .logo {
     width: 20%;
+    margin-top: 10px;
     margin-left: 10px;
-}
+  }
 
 nav {
     margin: 0;
@@ -78,6 +78,7 @@ footer {
 
 footer {
     background-color: #6A0136;
+    text-align: center;
 }
 
 footer p {
