@@ -7,7 +7,7 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-picture {
+.pictures {
   padding: 0.5rem;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -157,7 +157,7 @@ h2 {
   footer {
     font-size: 18px;
   }
-  picture {
+  .pictures {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -184,7 +184,7 @@ h2 {
     footer {
       font-size: 20px;
     }
-    picture {
+    .pictures {
       grid-template-columns: 1fr 1fr 1fr;
 
     }
