@@ -13,7 +13,7 @@ body {
   margin-bottom: 0.25rem;
 }
 .pics img {
-  border-radius: 0.25rem white;
+  border-radius: 0.25rem;
   filter: blur(0em);
   transition: filter 0.5s;
   box-shadow: 0 0 5px;
