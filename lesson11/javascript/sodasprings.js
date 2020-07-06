@@ -55,6 +55,11 @@ fetch(requestURL)
 
     });
 
+    /* Nav Bar */
+function toggleMenu() {
+    document.getElementsByClassName('navigation')[0]
+        .classList.toggle('responsive');
+}
 
 
 //Windchill formula 

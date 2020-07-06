@@ -66,6 +66,11 @@ function windChill(tempF, speed) {
     }
 }
 
+/* Nav Bar */
+function toggleMenu() {
+    document.getElementsByClassName('navigation')[0]
+        .classList.toggle('responsive');
+}
 
 //footer date
 document.getElementById('year').textContent = new Date().getFullYear();
