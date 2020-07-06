@@ -286,6 +286,7 @@ section {
         float: right;
         padding: 0.5rem;
     }
+   
 
     .map {
         display: block;
@@ -313,7 +314,7 @@ section {
     .weather-summary {
         position: absolute;
         top: 500px;
-        left: 75px;
+        left: 300px;
     }
 
     .article img {
