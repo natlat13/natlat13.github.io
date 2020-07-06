@@ -26,7 +26,7 @@ header p {
     width: 20%;
     margin-top: 10px;
     margin-left: 10px;
-  }
+}
 
 nav {
     margin: 0;
@@ -154,8 +154,7 @@ picture img {
 
 .forecast ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .forecast ul li {
@@ -194,6 +193,7 @@ section {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .contact {
     display: flex;
     align-items: center;
@@ -201,6 +201,7 @@ section {
     border-radius: 25px;
     color: white;
 }
+
 .contact-no-map {
     margin: 0 auto;
 }
@@ -208,13 +209,34 @@ section {
 .contact-no-map p {
     align-items: center;
 }
+
 .contact-no-map p {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 .contact img {
     margin: 10px;
 }
+
+.eventDiv {
+    background-color: #6A0136;
+    border-radius: 25px;
+    box-shadow: 0 0 30px #6A0136;
+    color: white;
+    margin-top: 10px;
+}
+
+.eventDiv h2 {
+    color: white;
+}
+
+.eventBlock ul {
+    list-style: none;
+}
+
+
+
 
 
 /*medium view*/
@@ -238,6 +260,10 @@ section {
         color: white;
     }
 
+    .eventDiv {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
 
     header,
     footer,
@@ -262,8 +288,10 @@ section {
         margin-left: 1rem;
         border-radius: 25px;
     }
-
-    
+    .forecast ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
 }
 
@@ -286,6 +314,10 @@ section {
 
     .article img {
         max-width: 700px;
+    }
+    .eventDiv {
+        margin-left: 20rem;
+        margin-right: 20rem;
     }
 
 }
