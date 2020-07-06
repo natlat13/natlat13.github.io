@@ -162,10 +162,11 @@ picture img {
 }
 
 .forecast {
-    border: solid #1B1B1E;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border-radius: 25px;
+    
 }
-
 
 section {
     padding: 1rem;
@@ -229,6 +230,7 @@ section {
 
 .eventDiv h2 {
     color: white;
+    border-bottom: solid;
 }
 
 .eventBlock ul {
