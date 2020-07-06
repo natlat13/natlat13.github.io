@@ -38,26 +38,23 @@ const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 fetch(requestURL)
     .then((response) => response.json())
     .then((jsonObject) => {
-        console.log(jsonObject);
         const townsArray = jsonObject['towns']
-        
-            var events = townsArray.filter(towns => towns.name == 'Preston');
-            var prestonEvents = events[0].events;
+        var events = townsArray.filter(towns => towns.name == 'Preston');
+        var prestonEvents = events[0].events;
 
 
-            let list = "<ul>";
-            prestonEvents.forEach(eventList);
-            list += "</ul>";
-            document.querySelector(".eventBlock").innerHTML = list;
+        let list = "<ul>";
+        prestonEvents.forEach(eventList);
+        list += "</ul>";
+        document.querySelector(".eventBlock").innerHTML = list;
 
-            function eventList(eventBlock) {
-                list += "<li>" + eventBlock + "</li>";
-            }
+        function eventList(eventBlock) {
+            list += "<li>" + eventBlock + "</li>";
+        }
 
     });
 
-
-
+    
 //Windchill formula 
 function windChill(tempF, speed) {
     if (tempF <= 50 && speed > 3) {

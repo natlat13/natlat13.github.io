@@ -38,7 +38,6 @@ const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 fetch(requestURL)
     .then((response) => response.json())
     .then((jsonObject) => {
-        console.log(jsonObject);
         const townsArray = jsonObject['towns']
         
             var events = townsArray.filter(towns => towns.name == 'Fish Haven');
