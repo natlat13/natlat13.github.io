@@ -1,0 +1,327 @@
+/*------------------------------*/
+
+body {
+    font-size: 16px;
+    margin: 0;
+    color: #1B1B1E;
+    font-family: 'Playfair Display', serif;
+}
+
+
+main {
+    margin: 0 auto;
+    color: #1B1B1E;
+    align-items: center;
+    max-width: 1360px;
+    text-align: center;
+}
+
+header h1,
+header p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+.logo {
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+nav {
+    margin: 0;
+}
+
+.navigation {
+    list-style: none;
+    background-color: #6A0136;
+    padding: 0.2em;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    opacity: 0.75;
+}
+
+.navigation a:active {
+    text-decoration: underline;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.responsive li {
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+header,
+footer {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    font-size: 18px;
+
+}
+
+footer {
+    background-color: #6A0136;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    opacity: 0.75;
+}
+
+h1,
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #6A0136;
+    margin: 0;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.title p {
+    margin: 0;
+    color: #1B1B1E;
+}
+
+.title {
+    padding-left: 0.5em;
+}
+
+picture img {
+    box-shadow: 0 0 10px;
+
+}
+
+.article {
+    padding: 1rem;
+    background-color: #1B1B1E;
+    border-radius: 25px;
+    color: white;
+    margin: 10px;
+    text-align: left;
+}
+
+.article h2 {
+    color: white;
+    margin-bottom: 0;
+}
+
+.article a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.article p:nth-child(2) {
+    padding: 0.25rem;
+}
+
+.article img {
+    max-width: 300px;
+    padding: 0.5rem;
+    box-shadow: 0 0 10px;
+    margin: 5px;
+}
+
+.forecast ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.forecast ul li {
+    list-style: none;
+}
+
+.forecast {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    
+}
+
+section {
+    padding: 1rem;
+}
+
+.weather-summary {
+    color: white;
+    background: radial-gradient(#1B1B1E, #8F3968);
+    border: 1px solid #6A0136;
+    padding: 1rem;
+    box-shadow: 0 0 30px #6A0136;
+    opacity: 0.8;
+}
+
+.weather-summary p {
+    margin: 4px;
+}
+
+.weather-summary h2 {
+    color: white;
+}
+
+.map {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    background-color: #1B1B1E;
+    border-radius: 25px;
+    color: white;
+}
+
+.contact-no-map {
+    margin: 0 auto;
+}
+
+.contact-no-map p {
+    align-items: center;
+}
+
+.contact-no-map p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact img {
+    margin: 10px;
+}
+
+.eventDiv {
+    background-color: #6A0136;
+    border-radius: 25px;
+    box-shadow: 0 0 30px #6A0136;
+    color: white;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.eventDiv h2 {
+    color: white;
+    border-bottom: solid;
+    padding: 1rem;
+}
+
+.eventBlock ul {
+    list-style: none;
+}
+
+
+
+
+
+/*medium view*/
+
+@media only screen and (min-width: 32.5em) {
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        color: white;
+    }
+
+    .eventDiv {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    header,
+    footer,
+    body {
+        font-size: 1rem;
+    }
+
+    .weather-summary {
+        position: absolute;
+        top: 300px;
+        left: 50px;
+    }
+
+    .article img {
+        max-width: 500px;
+        float: right;
+        padding: 0.5rem;
+    }
+
+    .map {
+        display: block;
+        margin-left: 1rem;
+        border-radius: 25px;
+    }
+    .forecast ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+
+/*large view*/
+
+@media only screen and (min-width: 64em) {
+
+    header,
+    footer,
+    body {
+        font-size: 1.5rem;
+    }
+
+    .weather-summary {
+        position: absolute;
+        top: 500px;
+        left: 75px;
+    }
+
+    .article img {
+        max-width: 700px;
+    }
+    .eventDiv {
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+}

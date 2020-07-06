@@ -226,11 +226,13 @@ section {
     box-shadow: 0 0 30px #6A0136;
     color: white;
     margin-top: 10px;
+    text-align: left;
 }
 
 .eventDiv h2 {
     color: white;
     border-bottom: solid;
+    padding: 1rem;
 }
 
 .eventBlock ul {

@@ -3,9 +3,9 @@ fetch(apiURL)
     .then((response) => response.json())
     .then((jsonObject) => {
         document.getElementById('currently').textContent = jsonObject.weather[0].description;
-        document.getElementById('temp').textContent = jsonObject.main.temp;
-        document.getElementById('humidity').textContent = jsonObject.main.humidity;
-        document.getElementById('wind-speed').textContent = jsonObject.wind.speed;
+        document.getElementById('temp').innerHTML = `${jsonObject.main.temp}&deg;F`;
+        document.getElementById('humidity').textContent = jsonObject.main.humidity + "%";
+        document.getElementById('wind-speed').textContent = jsonObject.wind.speed + " mph";
         document.getElementById('windchill').innerHTML = windChill(jsonObject.main.temp, jsonObject.wind.speed);
 
     });
