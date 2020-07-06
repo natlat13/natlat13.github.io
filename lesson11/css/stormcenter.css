@@ -131,7 +131,9 @@ footer {
 
 footer {
   background-color: #6A0136;
+  text-align: center;
 }
+
 footer p {
   margin: 10px;
 }
