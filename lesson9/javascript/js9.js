@@ -5,7 +5,7 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject);
+        
         const townsArray = jsonObject['towns']
         for (let i = 0; i < townsArray.length; i++) {
 
