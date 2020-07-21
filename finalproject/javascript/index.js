@@ -1,5 +1,5 @@
 //JSON Pricing
-const requestURL("");
+const requestURL("https://natlat13.github.io/finalproject/json.html");
 console.log(jsonObject);
 
 
