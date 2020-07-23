@@ -6,7 +6,7 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject){
-console.log(jsonObject);
+
 const pricing = jsonObject['pricing']
 });
 
@@ -40,6 +40,31 @@ fetch(apiURL)
         document.getElementById('temp').innerHTML = `${jsonObject.main.temp}&deg;F`;
         document.getElementById('humidity').textContent = jsonObject.main.humidity + "%";
     });
+
+//5 Day Forecast
+const apiForecast = "https://api.openweathermap.org/data/2.5/forecast?lat=20.5083&lon=-86.9458&units=imperial&APPID=f10fe0a4423c6d05fbdfb9677e974545";
+
+fetch(apiForecast)
+    .then((response) => response.json())
+    .then((jsonObject) => {
+
+        const fiveDayForecast = jsonObject.list.filter(x => x.dt_txt.includes("12:00:00"));
+        const daysOfWeek = ["SUN", "MON", "TUES", "WED", "THURS", "FRI", "SAT"];
+
+        let i = 0;
+        fiveDayForecast.forEach(forecast => {
+            let d = new Date(forecast.dt_txt);
+            document.getElementById(`temp${i + 1}`).innerHTML = `${forecast.main.temp.toFixed(0)}&deg;F`;
+            document.getElementById(`day${i + 1}`).textContent = daysOfWeek[d.getDay()];
+            const imgsrc = `http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`;
+            const desc = forecast.weather[0].description;
+            document.getElementById(`icon${i + 1}`).setAttribute('src', imgsrc);
+            document.getElementById(`icon${i + 1}`).setAttribute('alt', desc);
+            i++;
+
+        });
+    })
+
 
 //Footer
 document.getElementById('year').textContent = new Date().getFullYear();

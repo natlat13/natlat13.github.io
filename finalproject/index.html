@@ -35,6 +35,35 @@
             <p>Temp: <span id="temp"></span></p>
             <p>Humidity: <span id="humidity"></span></p>
         </section>
+        <div class="forecast">
+            <ul class="five-day">
+                <li>
+                    <p><span id="day1"></span></p>
+                    <img src="" alt="" id="icon1">
+                    <p><span id="temp1"></span></p>
+                </li>
+                <li>
+                    <p><span id="day2"></span></p>
+                    <img src="" alt="" id="icon2">
+                    <p><span id="temp2"></span></p>
+                </li>
+                <li>
+                    <p><span id="day3"></span></p>
+                    <img src="" alt="" id="icon3">
+                    <p><span id="temp3"></span></p>
+                </li>
+                <li>
+                    <p><span id="day4"></span></p>
+                    <img src="" alt="" id="icon4">
+                    <p><span id="temp4"></span></p>
+                </li>
+                <li>
+                    <p><span id="day5"></span></p>
+                    <img src="" alt="" id="icon5">
+                    <p><span id="temp5"></span></p>
+                </li>
+            </ul>
+        </div>
         <div class="slideshow">
             <picture>
                 <source srcset="images/cozumel1.jpg" media="(min-width: 500px) and (max-width: 799px)">
@@ -54,16 +83,30 @@
         </div>
 
         <div class="info">
-            <h2>Rental info:</h2>
+            <h2>What you can rent:</h2>
+            <div class="info-flex">
+            <ul>
+                <li>~Honda Metro Scooter</li>
+                <li>~Honda Dio Scooter</li>
+                <li>~Honda PCX150 Scooter</li>
+                <li>Honda Pioneer ATV</li>
+                <li>Jeep Wrangler - 4 door with a/c</li>
+                <li>Jeep Wrangler - 2 door</li>
+            </ul>
+            <form method="get" action="reservations.html">
+                <button class="reserve-button">Reserve your fun now!</button></form></div>
         </div>
 
 
 
-        <form method="get" action="reservations.html">
-            <button class="reserve-button">Reserve your fun now!</button></form>
-
     </main>
     <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="social-media-icons" src="images/facebook48px.png" alt="Facebook" /></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="social-media-icons"
+                    src="images/instagram48px.png" alt="Instagram" /></a></div>
+
         <p> &copy; Scoots | Natalya Peet
             | <a href="/finalproject/references.html">References</a>
             <br><span id="day"></span> <span id="date"></span> <span id="month"></span> <span id="year"></span></p>

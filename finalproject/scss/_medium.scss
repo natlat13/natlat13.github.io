@@ -1,15 +1,14 @@
 .navigation {
     display: flex;
+    li {
+        display: block;
+        flex: 1 1 100%;
+    }//end nav li
+    li:first-child {
+        display: none;
+    }//end nav li:first-child
 }
 
-.navigation li:first-child {
-    display: none;
-}
-
-.navigation li {
-    display: block;
-    flex: 1 1 100%;
-}
 
 
 header,
@@ -26,4 +25,8 @@ main {
     height: 400px;
     width: 533px;
 }
+}
+.forecast ul {
+    flex-direction: row;
+    justify-content: space-around;
 }

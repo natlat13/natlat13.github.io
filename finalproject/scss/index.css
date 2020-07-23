@@ -8,6 +8,12 @@ nav {
   margin: 0;
   background-color: #EC9A29; }
 
+header img {
+  width: 20%;
+  margin-top: -40px;
+  margin-bottom: -60px;
+  margin-left: 10px; }
+
 body {
   font-size: 16px;
   margin: 0; }
@@ -30,20 +36,28 @@ main {
     display: flex;
     justify-content: space-around;
     margin-top: 0;
-    opacity: 0.5;
-    font-family: "Advent Pro", sans-serif; }
+    font-family: "Advent Pro", sans-serif;
+    background-color: white;
+    opacity: 0.5; }
   main .info {
     background-color: #393E41;
     color: white;
     margin-left: 25px;
-    margin-right: 25px; }
+    margin-right: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left; }
+    main .info .info-flex {
+      display: flex;
+      flex-wrap: row;
+      justify-content: space-evenly;
+      align-items: center; }
+    main .info li {
+      margin-left: 15px;
+      list-style: none; }
     main .info h2 {
+      margin-left: 10px;
       font-family: "Advent Pro", sans-serif; }
-
-.logo {
-  width: 20%;
-  margin-top: 10px;
-  margin-left: 10px; }
 
 .slideshow {
   height: 200px;
@@ -81,6 +95,18 @@ main {
 .references a {
   color: #393E41; }
 
+.forecast {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 25px; }
+  .forecast p {
+    font-family: "Advent Pro", sans-serif; }
+  .forecast ul {
+    display: flex;
+    flex-direction: column; }
+    .forecast ul li {
+      list-style: none; }
+
 header,
 footer {
   font-size: 18px; }
@@ -90,32 +116,31 @@ footer {
   background-color: #EC9A29;
   color: white;
   padding: 0.25rem; }
-
-footer p {
-  margin: 10px; }
-
-footer a {
-  text-decoration: none;
-  color: white; }
-
-footer a:hover {
-  opacity: 0.75; }
-
-.header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1em; }
+  footer p {
+    margin: 10px; }
+  footer a {
+    text-decoration: none;
+    color: white; }
+  footer a:hover {
+    opacity: 0.75; }
+  footer .social {
+    display: flex;
+    border-radius: 25px;
+    flex-wrap: row;
+    justify-content: center; }
+    footer .social .social-media-icons {
+      margin-top: 15px;
+      margin-left: 10px;
+      margin-right: 10px; }
 
 @media only screen and (min-width: 560px) {
   .navigation {
     display: flex; }
-
-  .navigation li:first-child {
-    display: none; }
-
-  .navigation li {
-    display: block;
-    flex: 1 1 100%; }
+    .navigation li {
+      display: block;
+      flex: 1 1 100%; }
+    .navigation li:first-child {
+      display: none; }
 
   header,
   footer,
@@ -127,7 +152,11 @@ footer a:hover {
     margin-right: 45px; }
   main .slideshow {
     height: 400px;
-    width: 533px; } }
+    width: 533px; }
+
+  .forecast ul {
+    flex-direction: row;
+    justify-content: space-around; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   header,
