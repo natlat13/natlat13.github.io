@@ -297,10 +297,15 @@ footer {
 }
 
 .thankyou {
+    margin: 15px auto;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: $navBackground;
+    max-width: 600px;
     color: $textBody;
     font-family: $fontHead;
     font-size: 2rem;
+    padding-bottom: 15px;
     p {
     margin-top:15px;
     }

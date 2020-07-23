@@ -286,10 +286,15 @@ footer .social .social-media-icons {
 }
 
 .thankyou {
+  margin: 15px auto;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #EC9A29;
+  max-width: 600px;
   color: #393E41;
   font-family: "Advent Pro", sans-serif;
   font-size: 2rem;
+  padding-bottom: 15px;
 }
 
 .thankyou p {
