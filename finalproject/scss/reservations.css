@@ -1,0 +1,322 @@
+form fieldset {
+  margin: 0 auto;
+  padding: 2rem 2%;
+  font-size: 1.25rem;
+  border: none;
+  max-width: 500px;
+  text-align: left;
+  background-color: #393E41;
+  color: white;
+}
+
+form fieldset p {
+  font-family: "Advent Pro", sans-serif;
+}
+
+form legend {
+  padding-top: 3rem;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 1.5rem;
+}
+
+form label.personal,
+form label.rental-info {
+  display: block;
+  padding-top: 1rem;
+  color: "Old Standard TT", serif;
+  font-size: 1.25rem;
+}
+
+form label.personal input,
+form label.rental-info input,
+.text-area {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #EC9A29;
+  border-radius: 4px;
+  padding: 1rem;
+  color: "Old Standard TT", serif;
+  width: 90%;
+  max-width: 20rem;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.accomodations {
+  margin-top: 0.5rem;
+}
+
+form input.submit-button {
+  border: none;
+  color: white;
+  padding: 0.75rem 1rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+  font-size: 1.25rem;
+}
+
+form .text-area {
+  min-width: 300px;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.required {
+  color: red;
+}
+
+nav {
+  font-family: "Advent Pro", sans-serif;
+  padding: 0.25rem;
+  margin: 0;
+  background-color: #EC9A29;
+}
+
+header img {
+  width: 20%;
+  margin-top: -40px;
+  margin-bottom: -60px;
+  margin-left: 10px;
+}
+
+body {
+  font-size: 16px;
+  margin: 0 auto;
+  background-color: #D0F4EA;
+  font-family: "Old Standard TT", serif;
+}
+
+main {
+  text-align: center;
+}
+
+main .reserve-button {
+  background-color: #EC9A29;
+  border: none;
+  opacity: 1;
+  font-family: "Advent Pro", sans-serif;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #393E41;
+}
+
+main .reserve-button:hover {
+  opacity: 0.8;
+}
+
+main .weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 0;
+  font-family: "Advent Pro", sans-serif;
+  background-color: white;
+  opacity: 0.5;
+}
+
+main .info {
+  background-color: #393E41;
+  color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+main .info .info-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+main .info li {
+  margin-left: 15px;
+  list-style: none;
+}
+
+main .info h2 {
+  margin-left: 10px;
+  font-family: "Advent Pro", sans-serif;
+}
+
+.slideshow {
+  height: 200px;
+  width: 300px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mySlides {
+  display: none;
+  -webkit-box-shadow: 0 0 10px;
+          box-shadow: 0 0 10px;
+}
+
+.navigation {
+  list-style: none;
+  text-align: center;
+}
+
+.navigation li a {
+  display: block;
+  color: #393E41;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navigation a:hover {
+  opacity: 0.75;
+}
+
+.navigation a:active {
+  text-decoration: none;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.responsive li {
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.references a {
+  color: #393E41;
+}
+
+.forecast {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+}
+
+.forecast p {
+  font-family: "Advent Pro", sans-serif;
+}
+
+.forecast ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.forecast ul li {
+  list-style: none;
+}
+
+header,
+footer {
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  background-color: #EC9A29;
+  color: #393E41;
+  padding: 0.25rem;
+}
+
+footer p {
+  margin: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #393E41;
+}
+
+footer a:hover {
+  opacity: 0.75;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .social .social-media-icons {
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 560px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  .navigation li {
+    display: block;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .navigation li a {
+    color: white;
+  }
+  main {
+    font-size: 14px;
+  }
+  header,
+  footer {
+    font-size: 18px;
+  }
+  picture {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .pics img:hover {
+    -webkit-box-shadow: 0 0 50px;
+            box-shadow: 0 0 50px;
+    border-radius: 150px 150px 150px 150px;
+  }
+}
+
+/* end of media query */
+@media only screen and (min-width: 1028px) {
+  main {
+    font-size: 16px;
+  }
+  header,
+  footer {
+    font-size: 20px;
+  }
+}
+
+/* end of media query */
+/*# sourceMappingURL=reservations.css.map */

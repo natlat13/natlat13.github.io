@@ -1,0 +1,35 @@
+.navigation {
+    display: flex;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .navigation li a {
+    color: white;
+  }
+
+  main {
+    font-size: 14px;
+  }
+
+  header,
+  footer {
+    font-size: 18px;
+  }
+  picture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .pics img:hover {
+    box-shadow: 0 0 50px;
+    border-radius: 150px 150px 150px 150px;
+
+  }

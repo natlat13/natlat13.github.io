@@ -1,0 +1,284 @@
+// Form 
+form fieldset {
+    margin: 0 auto;
+    padding: 2rem 2%;
+    font-size: 1.25rem;
+    border: none;
+    max-width: 500px;
+    text-align: left;
+    background-color: $backgroundBox;
+    color: $textWhite;
+
+    p {
+        font-family: $fontHead;
+    }
+
+    //end form p
+}
+
+form legend {
+    padding-top: 3rem;
+    font-family: $fontHead;
+    font-size: 1.5rem;
+}
+
+form label.personal,
+form label.rental-info {
+    display: block;
+    padding-top: 1rem;
+    color: $fontBody;
+    font-size: 1.25rem;
+}
+
+form label.personal input,
+form label.rental-info input,
+.text-area {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px $navBackground;
+    border-radius: 4px;
+    padding: 1rem;
+    color: $fontBody;
+    width: 90%;
+    max-width: 20rem;
+    background-color: $textWhite;
+    margin: 0 auto;
+}
+.accomodations {
+    margin-top: 0.5rem;
+}
+
+form input.submit-button {
+    border: none;
+    color: white;
+    padding: 0.75rem 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    font-size: 1.25rem;
+    ;
+}
+
+form .text-area {
+    min-width: 300px;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.required {
+    color: red;
+}
+
+
+nav {
+    font-family: $fontHead;
+    padding: $smallPad;
+    margin: 0;
+    background-color: $navBackground;
+
+}
+
+header {
+
+    img {
+        width: 20%;
+        margin-top: -40px;
+        margin-bottom: -60px;
+        margin-left: 10px;
+    }
+}
+
+body {
+    font-size: 16px;
+    margin: 0 auto;
+    background-color: $background;
+    font-family: $fontBody;
+}
+
+main {
+    text-align: center;
+
+    .reserve-button {
+        background-color: $navBackground;
+        border: none;
+        opacity: 1;
+        font-family: $fontHead;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1rem;
+        color: $backgroundBox;
+    }
+
+    .reserve-button:hover {
+        opacity: 0.8;
+    }
+
+    .weather {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0;
+        font-family: $fontHead;
+        background-color: $textWhite;
+        opacity: 0.5;
+    }
+
+    .info {
+        background-color: $backgroundBox;
+        color: $textWhite;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+
+        .info-flex {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        //end info-flex
+        li {
+            margin-left: 15px;
+            list-style: none;
+        }
+
+        //end .info li
+        h2 {
+            margin-left: 10px;
+            font-family: $fontHead;
+        }
+
+        //end .info h2
+    }
+}
+
+//end main
+
+.slideshow {
+    height: 200px;
+    width: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mySlides {
+    display: none;
+    box-shadow: 0 0 10px;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+
+    li a {
+        display: block;
+        color: $textBody;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    //end li a
+    a:hover {
+        opacity: 0.75;
+    }
+
+    //end a:hover
+    a:active {
+        text-decoration: none;
+    }
+
+    //end a:active
+    li {
+        display: none;
+    }
+
+    //end li
+    li:first-child {
+        display: block;
+    }
+
+    //end firstchild
+}
+
+//end .navigation
+
+.responsive li {
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.references a {
+    color: $textBody;
+}
+
+.forecast {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+
+    p {
+        font-family: $fontHead;
+    }
+
+    //end forecast p
+
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            list-style: none;
+        }
+
+        //end forecast ul li
+    }
+
+    //end forecast ul
+}
+
+header,
+footer {
+    font-size: 18px;
+
+}
+
+footer {
+    text-align: center;
+    background-color: $navBackground;
+    color: $textBody;
+    padding: $smallPad;
+
+    p {
+        margin: 10px;
+    }
+
+    //end p
+    a {
+        text-decoration: none;
+        color: $textBody;
+    }
+
+    //end a
+    a:hover {
+        opacity: 0.75;
+    }
+
+    //end a:hover
+    .social {
+        display: flex;
+        border-radius: 25px;
+        justify-content: center;
+
+        .social-media-icons {
+            margin-top: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
