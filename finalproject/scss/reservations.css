@@ -65,7 +65,7 @@ form input.submit-button {
   color: #393E41;
   background-color: #EC9A29;
   padding: 0.75rem 1rem;
-  margin: 0 0 2rem 2%;
+  margin: 15px auto;
   width: 96%;
   max-width: 20rem;
   font-size: 1.25rem;
@@ -111,6 +111,7 @@ main {
 }
 
 main .reserve-button {
+  margin-top: 25px;
   background-color: #EC9A29;
   border: none;
   opacity: 1;
@@ -119,10 +120,6 @@ main .reserve-button {
   text-align: center;
   font-size: 1rem;
   color: #393E41;
-}
-
-main .reserve-button:hover {
-  opacity: 0.8;
 }
 
 main .weather {
@@ -286,6 +283,17 @@ footer .social .social-media-icons {
   margin-top: 15px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.thankyou {
+  background-color: #EC9A29;
+  color: #393E41;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 2rem;
+}
+
+.thankyou p {
+  margin-top: 15px;
 }
 
 @media only screen and (min-width: 560px) {

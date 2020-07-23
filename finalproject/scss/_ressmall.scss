@@ -62,7 +62,7 @@ form input.submit-button {
     color: $textBody;
     background-color: $navBackground;
     padding: 0.75rem 1rem;
-    margin: 0 0 2rem 2%;
+    margin: 15px auto;
     width: 96%;
     max-width: 20rem;
     font-size: 1.25rem;
@@ -113,6 +113,7 @@ main {
     text-align: center;
 
     .reserve-button {
+        margin-top: 25px;
         background-color: $navBackground;
         border: none;
         opacity: 1;
@@ -123,9 +124,7 @@ main {
         color: $backgroundBox;
     }
 
-    .reserve-button:hover {
-        opacity: 0.8;
-    }
+
 
     .weather {
         display: flex;
@@ -294,5 +293,15 @@ footer {
             margin-left: 10px;
             margin-right: 10px;
         }
+    }
+}
+
+.thankyou {
+    background-color: $navBackground;
+    color: $textBody;
+    font-family: $fontHead;
+    font-size: 2rem;
+    p {
+    margin-top:15px;
     }
 }
