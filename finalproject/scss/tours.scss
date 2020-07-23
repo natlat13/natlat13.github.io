@@ -1,0 +1,11 @@
+@import "variables";
+
+@import "tourssmall";
+
+@media only screen and (min-width: 560px) {
+    @import "toursmed";
+} /* end of media query */
+
+@media only screen and (min-width: 1028px) {
+    @import "tourslarge"
+;} /* end of media query */

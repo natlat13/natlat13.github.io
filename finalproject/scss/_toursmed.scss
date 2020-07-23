@@ -1,0 +1,24 @@
+.navigation {
+    display: flex;
+    li {
+        display: block;
+        flex: 1 1 100%;
+    }//end nav li
+    li:first-child {
+        display: none;
+    }//end nav li:first-child
+}
+
+
+
+header,
+footer,
+body {
+    font-size: 1rem;
+}
+main {
+   
+    .slideshow {
+        width: 800px;
+    }
+}

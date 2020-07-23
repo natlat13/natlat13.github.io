@@ -1,6 +1,8 @@
 body {
     background-color: $background;
     font-family: $fontBody;
+    font-size: 16px;
+    margin: 0;
 }
 
 nav {
@@ -10,7 +12,22 @@ nav {
     background-color: $navBackground;
 
 }
-
+.tour-info {
+    background-color: $backgroundBox;
+        color: $textWhite;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+        h3, h1 {
+            padding: 0.5rem;
+            font-family: $fontHead;
+        }
+        p {
+            padding: 0.5rem;
+        }
+}
 header {
 
     img {
@@ -21,10 +38,7 @@ header {
     }
 }
 
-body {
-    font-size: 16px;
-    margin: 0;
-}
+
 
 main {
     margin: 0 auto;
@@ -45,13 +59,11 @@ main {
         opacity: 0.8;
     }
 
-
 }
 
 //end main
 
 .slideshow {
-    height: 200px;
     width: 300px;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -98,70 +110,6 @@ main {
     //end firstchild
 }
 
-
-.pre-table {
-    border-collapse: collapse;
-    letter-spacing: 1px;
-    margin-top: 25px;
-    text-align: center;
-    width: 400px;
-
-    .line3 {
-        font-size: 0.5rem;
-    }
-
-    tr:nth-child(even) th {
-        background-color: $backgroundBox;
-        color: $textWhite;
-        font-family: $fontHead;
-
-    }
-
-    tr:nth-child(odd) th {
-        background-color: $navBackground;
-        color: $textBody;
-    }
-
-    th {
-        text-align: center;
-    }
-}
-
-table {
-    margin: 0 auto;
-    width: 400px;
-    border-collapse: collapse;
-    letter-spacing: 1px;
-    text-align: left;
-    box-shadow: 5px 5px 5px $navBackground;
-
-    td {
-        padding: 10px 20px;
-    }
-
-    tr:nth-child(even) td {
-        background-color: $navBackground;
-    }
-
-    tr:nth-child(odd) td {
-        background-color: $backgroundBox;
-        color: $textWhite;
-    }
-
-}
-.details {
-    list-style:none;
-}
-.flex-table {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.flex-table-info {
-    display: flex;
-    flex-direction: center;
-}
-
 //end .navigation
 
 .responsive li {
@@ -169,20 +117,34 @@ table {
     border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.rental-images {
-    display: grid;
-    grid-template-columns: 1fr;
-    background: $backgroundBox;
-    margin: 25px;
-    color: $textWhite;
-
-    img {
-        box-shadow: 0 0 10px;
-        max-width: 200px;
-        margin:25px;
-    }
+.references a {
+    color: $textBody;
 }
 
+.forecast {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+
+    p {
+        font-family: $fontHead;
+    }
+
+    //end forecast p
+
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            list-style: none;
+        }
+
+        //end forecast ul li
+    }
+
+    //end forecast ul
+}
 
 header,
 footer {
@@ -195,10 +157,6 @@ footer {
     background-color: $navBackground;
     color: $textBody;
     padding: $smallPad;
-
-    .references a {
-        color: $textBody;
-    }
 
     p {
         margin: 10px;
@@ -228,5 +186,3 @@ footer {
         }
     }
 }
-
-//end footer
