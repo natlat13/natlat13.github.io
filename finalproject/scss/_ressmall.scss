@@ -44,13 +44,23 @@ form label.rental-info input,
     background-color: $textWhite;
     margin: 0 auto;
 }
-.accomodations {
-    margin-top: 0.5rem;
+.rental-length {
+    display:flex;
+    justify-content: space-around;
+    label {
+        margin-top:50px;
+    }
+}
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 2rem;
 }
 
 form input.submit-button {
     border: none;
-    color: white;
+    color: $textBody;
+    background-color: $navBackground;
     padding: 0.75rem 1rem;
     margin: 0 0 2rem 2%;
     width: 96%;
@@ -58,6 +68,10 @@ form input.submit-button {
     font-size: 1.25rem;
     ;
 }
+input.submit-button:hover {
+    opacity:0.6;
+}
+
 
 form .text-area {
     min-width: 300px;
