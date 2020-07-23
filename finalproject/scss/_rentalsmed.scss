@@ -1,0 +1,47 @@
+.navigation {
+    display: flex;
+    li {
+        display: block;
+        flex: 1 1 100%;
+    }//end nav li
+    li:first-child {
+        display: none;
+    }//end nav li:first-child
+}
+
+
+
+header,
+footer,
+body {
+    font-size: 1rem;
+}
+main {
+    .info {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+.slideshow {
+    height: 400px;
+    width: 533px;
+}
+}
+.forecast ul {
+    flex-direction: row;
+    justify-content: space-around;
+}
+.pre-table{
+    width: 800px;
+    .line3 {
+        font-size: 0.95rem;
+    }
+}
+table {
+    width: 800px;
+}
+.rental-images {
+    grid-template-columns: 1fr 1fr;
+    img {
+        max-width: 300px;
+    }
+}

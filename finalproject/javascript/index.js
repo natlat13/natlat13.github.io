@@ -1,16 +1,4 @@
-//JSON Pricing
-const requestURL = "https://natlat13.github.io/finalproject/json/index.json";
-
-fetch(requestURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject){
-
-const pricing = jsonObject['pricing']
-});
-
-/* Nav Bar Ham Button*/
+// Nav Bar Ham Button
 function toggleMenu() {
     document.getElementsByClassName('navigation')[0]
         .classList.toggle('responsive');

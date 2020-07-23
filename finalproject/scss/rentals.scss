@@ -1,0 +1,11 @@
+@import "variables";
+
+@import "rentalssmall";
+
+@media only screen and (min-width: 560px) {
+    @import "rentalsmed";
+} /* end of media query */
+
+@media only screen and (min-width: 1028px) {
+    @import "rentalslarge"
+;} /* end of media query */

@@ -1,0 +1,22 @@
+header,
+    footer,
+    body {
+        font-size: 1.5rem;
+    }
+    main {
+        margin: 0 auto;
+        .info {
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        .slideshow {
+            height: 600px;
+            width: 800px;
+        }
+    }//end main
+    .rental-images {
+        grid-template-columns: 1fr 1fr 1fr;
+        img {
+            max-width: 400px;
+        }
+    }
