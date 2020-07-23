@@ -17,5 +17,11 @@ body {
     font-size: 1rem;
 }
 main {
-   
+   .contact-us {
+    flex-direction: row;
+    justify-content: space-around;
+   }
+   iframe {
+    width: 600px;
+   }
 }
