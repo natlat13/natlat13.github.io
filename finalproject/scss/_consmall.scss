@@ -22,12 +22,59 @@ header {
         margin-left: 10px;
     }
 }
+form label.personal {
+    display: block;
+    padding-top: 1rem;
+    color: $fontBody;
+    font-size: 1.25rem;
+}
 
-
+form label.personal input,
+.text-area {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px $navBackground;
+    border-radius: 4px;
+    padding: 1rem;
+    color: $fontBody;
+    width: 90%;
+    max-width: 20rem;
+    background-color: $textWhite;
+    margin: 0 auto;
+}
+form input.submit-button {
+    border: none;
+    color: $textBody;
+    background-color: $navBackground;
+    padding: 0.75rem 1rem;
+    margin: 15px auto;
+    width: 96%;
+    max-width: 20rem;
+    font-size: 1.25rem;
+}
+input.submit-button:hover {
+    opacity:0.6;
+}
+.required {
+    color: red;
+}
 
 main {
     text-align: center;
     color: $textBody;
+    .thankyou {
+        margin: 15px auto;
+        padding: 15px;
+        background-color: $navBackground;
+        max-width: 600px;
+        font-family: $fontHead;
+        font-size: 2rem;
+        margin-bottom: 15px;
+        p {
+        margin-top:15px;
+        font-family: $fontHead;
+        }
+    }
     h1, h3 {
         font-family: $fontHead;
     }

@@ -16,9 +16,55 @@ header img {
   margin-bottom: -60px;
   margin-left: 10px; }
 
+form label.personal {
+  display: block;
+  padding-top: 1rem;
+  color: "Old Standard TT", serif;
+  font-size: 1.25rem; }
+
+form label.personal input,
+.text-area {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #EC9A29;
+  border-radius: 4px;
+  padding: 1rem;
+  color: "Old Standard TT", serif;
+  width: 90%;
+  max-width: 20rem;
+  background-color: white;
+  margin: 0 auto; }
+
+form input.submit-button {
+  border: none;
+  color: #393E41;
+  background-color: #EC9A29;
+  padding: 0.75rem 1rem;
+  margin: 15px auto;
+  width: 96%;
+  max-width: 20rem;
+  font-size: 1.25rem; }
+
+input.submit-button:hover {
+  opacity: 0.6; }
+
+.required {
+  color: red; }
+
 main {
   text-align: center;
   color: #393E41; }
+  main .thankyou {
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #EC9A29;
+    max-width: 600px;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 15px; }
+    main .thankyou p {
+      margin-top: 15px;
+      font-family: "Advent Pro", sans-serif; }
   main h1, main h3 {
     font-family: "Advent Pro", sans-serif; }
   main .contact-us {
