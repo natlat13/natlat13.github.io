@@ -1,6 +1,8 @@
 body {
   background-color: #D0F4EA;
-  font-family: "Old Standard TT", serif; }
+  font-family: "Old Standard TT", serif;
+  font-size: 16px;
+  margin: 0; }
 
 nav {
   font-family: "Advent Pro", sans-serif;
@@ -14,65 +16,18 @@ header img {
   margin-bottom: -60px;
   margin-left: 10px; }
 
-body {
-  font-size: 16px;
-  margin: 0; }
-
 main {
   margin: 0 auto;
   text-align: center; }
-  main .reserve-button {
-    background-color: #EC9A29;
-    border: none;
-    opacity: 1;
-    font-family: "Advent Pro", sans-serif;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.5rem;
-    color: #393E41;
-    height: 100px;
-    width: 200px; }
-  main .reserve-button:hover {
-    opacity: 0.8; }
-  main .weather {
+  main h1, main h3 {
+    font-family: "Advent Pro", sans-serif; }
+  main .contact-us {
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-    margin-top: 0;
-    font-family: "Advent Pro", sans-serif;
-    background-color: white;
-    opacity: 0.5; }
-  main .info {
-    background-color: #393E41;
-    color: white;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: left; }
-    main .info .info-flex {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      margin-left: 10px;
-      margin-right: 10px; }
-    main .info li {
-      margin-left: 15px;
-      list-style: none; }
-    main .info h2 {
-      margin-left: 10px;
-      font-family: "Advent Pro", sans-serif; }
-
-.slideshow {
-  height: 200px;
-  width: 300px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.mySlides {
-  display: none;
-  box-shadow: 0 0 10px; }
+    flex-direction: row; }
+    main .contact-us iframe {
+      box-shadow: 0 0 10px;
+      margin: 25px; }
 
 .navigation {
   list-style: none;
@@ -147,20 +102,7 @@ footer {
   header,
   footer,
   body {
-    font-size: 1rem; }
-
-  main .reserve-button {
-    width: 400px; }
-  main .info {
-    margin-left: 45px;
-    margin-right: 45px; }
-  main .slideshow {
-    height: 400px;
-    width: 533px; }
-
-  .forecast ul {
-    flex-direction: row;
-    justify-content: space-around; } }
+    font-size: 1rem; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   header,
@@ -169,13 +111,7 @@ footer {
     font-size: 1.5rem; }
 
   main {
-    margin: 0 auto; }
-    main .info {
-      margin-left: 80px;
-      margin-right: 80px; }
-    main .slideshow {
-      height: 600px;
-      width: 800px; } }
+    margin: 0 auto; } }
 /* end of media query */
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=contact.css.map */
