@@ -96,15 +96,19 @@ table {
     color: white; }
 
 .details {
-  list-style: none; }
-
-.flex-table {
-  display: flex;
-  justify-content: flex-end; }
-
-.flex-table-info {
-  display: flex;
-  flex-direction: center; }
+  background-color: #393E41;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 15px;
+  text-align: left; }
+  .details ul li {
+    list-style: circle; }
+  .details h2 {
+    font-family: "Advent Pro", sans-serif;
+    padding-left: 10px; }
 
 .responsive li {
   display: block;
