@@ -10,28 +10,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Old+Standard+TT&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="scss/index.css">
 </head>
 
 <body>
-
     <header>
         <div class="header">
             <img class="logo" src="images/ScootsLogo.png" alt="Scoots Logo">
-
         </div>
         <nav>
             <ul class="navigation">
-
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="/finalproject/">HOME</a></li>
+                <li><a href="/finalproject/rentals.html">RENTALS</a></li>
+                <li><a href="/finalproject/reservations.html">RESERVATIONS</a></li>
+                <li><a href="/finalproject/tours.html">TOURS</a></li>
+                <li><a href="/finalproject/contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section class="weather">
+            <p>Current weather: <span id="currently"></span></p>
+            <p>Temp: <span id="temp"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+        </section>
+        <div class="slideshow">
+            <picture>
+                <source srcset="images/cozumel1.jpg" media="(min-width: 500px) and (max-width: 799px)">
+                <source srcset="images/cozumel1large.jpg" media="(min-width: 800px)">
+                <img class="mySlides" src="images/cozumel1small.jpg" alt="Cozumel Image">
+            </picture>
+            <picture>
+                <source srcset="images/cozumel2.jpg" media="(min-width: 500px) and (max-width: 799px)">
+                <source srcset="images/cozumel2large.jpg" media="(min-width: 800px)">
+                <img class="mySlides" src="images/cozumel2small.jpg" alt="Cozumel Image">
+            </picture>
+            <picture>
+                <source srcset="images/cozumel3.jpg" media="(min-width: 500px) and (max-width: 799px)">
+                <source srcset="images/cozumel3large.jpg" media="(min-width: 800px)">
+                <img class="mySlides" src="images/cozumel3small.jpg" alt="Cozumel Image">
+            </picture>
+        </div>
+
+        <div class="info">
+            <h2>Rental info:</h2>
+        </div>
+
+
+
+        <form method="get" action="reservations.html">
+            <button class="reserve-button">Reserve your fun now!</button></form>
 
     </main>
     <footer>
         <p> &copy; Scoots | Natalya Peet
-            | <a href="#">References</a>
+            | <a href="/finalproject/references.html">References</a>
             <br><span id="day"></span> <span id="date"></span> <span id="month"></span> <span id="year"></span></p>
     </footer>
     <script src="javascript/index.js"></script>

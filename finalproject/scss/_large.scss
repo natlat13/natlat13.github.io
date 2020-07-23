@@ -1,0 +1,16 @@
+header,
+    footer,
+    body {
+        font-size: 1.5rem;
+    }
+    main {
+        margin: 0 auto;
+        .info {
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        .slideshow {
+            height: 600px;
+            width: 800px;
+        }
+    }

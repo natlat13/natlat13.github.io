@@ -1,3 +1,128 @@
 body {
-    
+    background-color: $background;
+    font-family: $fontBody;
+}
+nav {
+    font-family: $fontHead;
+    padding: $smallPad;
+    margin: 0;
+    background-color: $navBackground;
+
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+}
+main {
+    margin: 0 auto;
+    text-align: center;
+    .reserve-button {
+        background-color: $navBackground;
+        border: none;
+        opacity: 1;
+        font-family: $fontHead;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1rem;
+        color: $textWhite;
+    }
+    .reserve-button:hover {
+        opacity: 0.8;
+    }
+    .weather {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0;
+        opacity: 0.5;
+        font-family: $fontHead;
+    }
+    .info {
+        background-color: $backgroundBox;
+        color: $textWhite;
+        margin-left: 25px;
+        margin-right: 25px;
+        h2{
+            font-family: $fontHead;
+        }
+    }
+}//end main
+
+.logo {
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .slideshow{
+      height: 200px;
+      width: 300px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .mySlides {
+      display:none;
+      box-shadow: 0 0 10px;
+    }
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    li a {
+        display: block;
+        color: $textWhite;
+        text-decoration: none;
+        font-weight: 700; } //end li a
+    a:hover {
+            opacity: 0.75;
+        } //end a:hover
+    a:active {
+            text-decoration: none;
+        } //end a:active
+    li {
+            display: none;
+        } //end li
+    li:first-child {
+            display: block;
+        } //end firstchild
+}//end .navigation
+
+.responsive li {
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+.references a{
+color: $textBody;
+}
+header,
+footer {
+    font-size: 18px;
+
+}
+
+footer {
+    text-align: center;
+    background-color: $navBackground;
+    color: $textWhite;
+    padding: $smallPad;
+}
+footer p {
+    margin: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: $textWhite;
+}
+
+footer a:hover {
+    opacity: 0.75;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
 }
